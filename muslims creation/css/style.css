@@ -1,0 +1,411 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+:root{
+/******************* Font Family **********************************/
+--font-1: 'Abel', sans-serif;	
+--font-2: 'Acme', sans-serif;	
+--font-3: 'Aladin', cursive;	
+--font-4: 'Alegreya Sans', sans-serif;	
+--font-5: 'Allura', cursive;	
+--font-6: 'Archivo Narrow', sans-serif;	
+--font-7: 'Asap Condensed', sans-serif;	
+--font-8: 'Assistant', sans-serif;	
+--font-9: 'Barlow Semi Condensed', sans-serif;	
+--font-10: 'Bebas Neue', cursive;	
+--font-11: 'Cabin', sans-serif;	
+--font-12: 'Caveat', cursive;	
+--font-13: 'Chakra Petch', sans-serif;	
+--font-14: 'Courgette', cursive;	
+--font-15: 'Dancing Script', cursive;	
+--font-16: 'Exo', sans-serif;	
+--font-17: 'Fira Sans Condensed', sans-serif;	
+--font-18: 'Handlee', cursive;	
+--font-19: 'IBM Plex Mono', monospace;	
+--font-20: 'Indie Flower', cursive;	
+--font-21: 'Julee', cursive;	
+--font-22: 'Just Another Hand', cursive;	
+--font-23: 'Kalam', cursive;	
+--font-24: 'Kanit', sans-serif;	
+--font-25: 'Lobster', cursive;	
+--font-26: 'Marck Script', cursive;	
+--font-27: 'Nanum Pen Script', cursive;	
+--font-28: 'Oleo Script', cursive;	
+--font-29: 'Pacifico', cursive;	
+--font-30: 'Pangolin', cursive;	
+--font-31: 'Playball', cursive;	
+--font-32: 'Questrial', sans-serif;	
+--font-33: 'Rajdhani', sans-serif;	
+--font-34: 'Reenie Beanie', cursive;	
+--font-35: 'Roboto', sans-serif;	
+--font-36: 'Roboto Mono', monospace;	
+--font-37: 'Saira Condensed', sans-serif;	
+--font-38: 'Satisfy', cursive;	
+--font-39: 'Shadows Into Light', cursive;	
+--font-40: 'Signika', sans-serif;	
+--font-41: 'Signika Negative', sans-serif;	
+--font-42: 'Sofia', cursive;	
+--font-43: 'Sono', sans-serif;	
+--font-44: 'Staatliches', cursive;	
+--font-45: 'Tajawal', sans-serif;	
+--font-46: 'Teko', sans-serif;	
+/**********X********* Font Family **************X********************/
+/********************** color ********************************/
+--color-1: #979797;
+--color-2: #ffffff;
+/*****X***************** color *****************X***************/
+}
+a{
+    color: #ffffff;
+    text-decoration: none;
+}
+ul{
+    list-style-type: none;
+}
+body{
+    background: #000000;
+    color: rgb(255, 255, 255);
+}
+/******************* NAV section ******************/
+nav{
+    position: fixed;
+    width: 100%;
+    background-color: #000000;
+    transform: translateY(-100vh);
+    transition: transform 0.3s ease-in-out;
+    z-index: 998;
+}
+.nav.show-menu {
+    transform: translateY(0);
+  }
+.logo{
+    width: 10vw;
+    position: absolute;
+    top: 3rem;
+    left: 4rem;
+    z-index: 999;
+    cursor: pointer;
+}
+.logo img{
+    width: 100%;
+}
+/***************** NAV MENU ****************************/
+.nav-menu{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+/*********************** nab bar ***************************/
+.nav-bar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 14rem;
+}
+.nav-bar img{
+    width: 10rem;
+    margin-right: 5rem;
+}
+hr{
+    width: 23rem;
+    border-color: #777777;
+    border-width: 1.2px;
+}
+.nav-items{
+    display: flex;
+    font-size: .8rem;
+    font-family: var(--font-1);
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: .2rem;
+}
+.nav-items .nav-link{
+    margin-left: 5rem;
+    position: relative;
+    padding: .6rem 0;
+    cursor: pointer;
+}
+a::after{
+    display: none;
+    content: " ";
+    background-color: #ffffff;
+    width: 100%;
+    height: 1px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+/************X*********** nab bar ***************X************/
+/*************************** nav footer **************************/
+.information{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+    margin: 0 2rem;
+}
+.information>div{
+    border-right: 1px solid rgb(77, 77, 77);
+    height: 10rem;
+    text-align: left;
+    width: 100%;
+    margin-left: 1rem;
+}
+.information>div h2{
+    font-size: .9rem;
+    letter-spacing: .1rem;
+    font-family: var(--font-1);
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+.information>div p,ul{
+    color: var(--color-1);
+}
+.cr-social a{
+    color: var(--color-1);
+}
+.cr-social a:nth-last-child(1){
+    padding-left: 1rem;
+}
+.cr-social a:hover{
+    color: var(--color-2);
+}
+.code-details{
+    border: none!important;
+}
+.ul-flex{
+    display: flex;
+    justify-content: space-between;
+}
+/*************************** nav footer **************************/
+/*********X******** NAV MENU *****************X***********/
+/********X*********** NAV section ********X**********/
+/****************** hero section ************************/
+.hero-section{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.hero-title{
+    position: absolute;
+    z-index: 2;
+    top: 36%;
+}
+.hero-title h2{
+    font-size: 1.3rem;
+    font-family: var(--font-3);
+    letter-spacing: .4rem;
+    font-weight: 700;
+    font-style: italic;
+}
+/**************************** Swiper **************************/
+.swiper{
+    width: 100%;
+    height: 135vh;
+    overflow-y:inherit;
+}
+.swiper .swiper-button-prev::after, .swiper .swiper-button-next::after{
+    color: #ffffff;
+    font-size: .9rem;
+}
+.swiper .swiper-button-prev, .swiper .swiper-button-next{
+    width: 6rem;
+}
+.swiper-button-next, .swiper-button-prev{
+    top: 38%;
+}
+.swiper-slide{
+    opacity: .5;
+}
+.swiper-backface-hidden .swiper-slide{
+    transform: translateY(-4rem);
+}
+/************************ hero Image *********************************/
+.hero-1{
+    width: 55vw;
+    display: grid;
+    grid-row-gap: 2rem;
+    top: 50%;
+    left: 50%;
+    transform: translate3d(-50%,-50%,0) rotate(-30deg);
+    position: absolute;
+}
+.hero-1 div{
+    display: grid;
+    grid-column-gap: 2rem;
+}
+.hero-1 img{
+    width: 100%;
+}
+.hero-1-1{
+    grid-template-columns: 1fr 2fr;
+    align-items: flex-end;
+}
+.hero-1-2{
+    grid-template-columns: 2fr 1fr;
+}
+.hero-2, .hero-3{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.hero-2 img, .hero-3 img{
+    width: 65%;
+}
+.hero-4{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.hero-4-1{
+    width: 65%;
+    display: flex;
+    justify-content: space-between;
+}
+.hero-4 img{
+    width: 48%;
+}
+/**********X************** hero Image *****************X****************/
+/***************X************* Swiper **************X************/
+/********X********** hero section *************X***********/
+/******************* web Contant ************************/
+/********************** Islamic History ************************/
+.islamic-history{
+    width: 100%;
+}
+.islamic-civil{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.islamic-civil img{
+    width: 24rem;
+}
+.islamic-civil .islamic-civil-details{
+    width: 17rem;
+}
+.islamic-civil-details p{
+    font-size: .9rem;
+    font-weight: 600;
+    font-family: var(--font-1);
+    line-height: 1.6rem;
+    letter-spacing: .1rem;
+    color: var(--color-1);
+    padding-bottom: 1rem;
+}
+.islamic-civil-details p>span{
+    font-size: 1rem;
+    color: var(--color-2);
+}
+/*********X************* Islamic History *************X***********/
+/*************************** islamic creation carwsel **************************/
+.islamic-creation-carousel{
+    width: 100%;
+    height: 100vh;
+}
+.islamic-creation-carousel-si{
+    position: absolute;
+    width: 100%;
+}
+.carousel-cell {
+    width: 14rem;
+    margin: 0 4rem;
+  }
+  .carousel-cell img{
+    width: 100%;
+    opacity: .7;
+  }
+  .carousel-cell.size-180 { width: 180px; }
+  .carousel-cell.size-large { width: 75%; }
+  .invention-link{
+    position: absolute;
+    top: 35rem;
+    left: 38.7rem;
+  }
+  .invention-link a{
+    text-decoration: underline;
+    letter-spacing: .2rem;
+    font-family: var(--font-12);
+    font-size: 1.3rem;
+  }
+/************X*************** islamic creation carwsel **************X************/
+/********************** Islamic civil description *****************************/
+.islamic-zone{
+    margin-top: 7rem;
+    width: 100%;
+    height: 110vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.description{
+    width: 30%;
+}
+.description h1{
+    width: 55%;
+    font-size: 2.7rem;
+    line-height: 3.3rem;
+    font-family: var(--font-14);
+}
+.description p{
+    color: var(--color-1);
+    margin-top: 3rem;
+    margin-left: 4rem;
+    font-family: var(--font-3);
+    font-size: 1.1rem;
+    letter-spacing: .15rem;
+    line-height: 1.3rem;
+}
+.islamic-civil-img{
+    width: 50%;
+}
+.islamic-civil-img img{
+    width: 100%;
+}
+/***********X*********** Islamic civil description *****************X************/
+/*******X************ web Contant *************X***********/
+/*********************** Footer ******************************/
+footer{
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.footer-nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+.footer-nav h2{
+    font-family: var(--font-18);
+    letter-spacing: .2rem;
+}
+.footer-nav span{
+    width: .1rem;
+    height: 80vh;
+    border: 1px solid var(--color-1);
+}
+.footer-content{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.morterx{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 12rem;
+}
+.morterx img{
+    width: 17%;
+}
+/*********X************** Footer ***************X***************/

@@ -1,0 +1,2689 @@
+@import url('https://fonts.googleapis.com/css2?family=Antonio:wght@400;500;600;700&family=Bebas+Neue&family=Big+Shoulders+Display:wght@400;500;600;700;800;900&family=IBM+Plex+Sans:wght@400;500;600;700&family=Mochiy+Pop+P+One&family=Montserrat:wght@400;500;600;700;800&family=Oswald:wght@400;500;600;700&family=Poppins:wght@400;500;600;700;800&family=Roboto+Mono:wght@400;500;600;700&family=Roboto+Slab:wght@400;500;600;700;800&family=Roboto:wght@400;500;700;900&display=swap');
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+/**************** Color ***********************/
+:root{
+    --white: #ffffff;
+    --foot-text: #3C3126;
+    --after--blue: #202773;
+    --blue: #24609c;
+    --black: #000000;
+    --text-gray: hsl(0deg 0% 65%);
+    --red: #ff0000;
+    --heading: #536691;
+    --border: #282a3657;
+    --input: hsl(0, 0%, 10%);
+    --hover: hsl(0, 0%, 16%);
+}
+/********X******** Color ***********X************/
+/***************** Font ********************/
+:root{
+    --font-1: 'IBM Plex Sans', sans-serif;
+    --font-2: 'Mochiy Pop P One', sans-serif;
+    --font-3: 'Montserrat', sans-serif;
+    --font-4: 'Oswald', sans-serif;
+    --font-5: 'Poppins', sans-serif;
+    --font-6: 'Roboto', sans-serif;
+    --font-7: 'Roboto Mono', monospace;
+    --font-8: 'Roboto Slab', serif;
+    --font-9: 'Antonio', sans-serif;
+    --font-10: 'Bebas Neue', cursive;
+    --font-11: 'Big Shoulders Display', cursive;
+}
+/********X******** Font ***********X************/
+/****************** Global Section**************************/
+html{
+    --scroll-behavior: smooth;
+    scroll-behavior: smooth;
+}
+body{
+    font-family: var(--font-5);
+    background: var(--black);
+    color: var(--white);
+}
+a{
+    text-decoration: none;
+    color: var(--white);
+}
+.flex-row{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.flex-column{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 10rem;
+}
+ul{
+    list-style-type: disc;
+    list-style-position: inside;
+}
+/*********X********* Global Section***********X***************/
+/************** header section ********************/
+header{
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.com/svgjs' width='1440' height='560' preserveAspectRatio='none' viewBox='0 0 1440 560'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1869%26quot%3b)' fill='none'%3e%3crect width='1440' height='560' x='0' y='0' fill='rgba(0%2c 0%2c 0%2c 1)'%3e%3c/rect%3e%3cg mask='url(%26quot%3b%23SvgjsMask1871%26quot%3b)'%3e%3cpath d='M819 297L801 297L783 297L765 297M837 297L819 279M1161 315L1143 297L1125 297L1107 279M927 297L909 279L891 279L873 279L855 279L837 279M1305 315L1287 297M1107 315L1089 315L1071 297L1053 297M657 315L639 333L621 333L603 333L585 333L567 333M1233 315L1215 297L1197 297L1179 297M891 297L873 315L855 333L837 333L819 333L801 333L783 333L765 351L747 351M693 315L675 333M675 315L657 297L639 297M1467 279L1449 279L1431 279L1413 279L1395 297L1377 297L1359 315L1341 315L1323 315L1305 315L1287 315L1269 315L1251 315L1233 315L1215 315L1197 315L1179 315L1161 315L1143 315L1125 315L1107 315L1089 333L1071 333L1053 315L1035 315L1017 315L999 315L981 315L963 297L945 297L927 297L909 297L891 297L873 297L855 297L837 297L819 297L801 315L783 315L765 315L747 315L729 315L711 315L693 315L675 315L657 315L639 315' stroke='url(%23SvgjsLinearGradient1870)' stroke-width='3'%3e%3c/path%3e%3cpath d='M634.5 315 a4.5 4.5 0 1 0 9 0 a4.5 4.5 0 1 0 -9 0zM760.5 297 a4.5 4.5 0 1 0 9 0 a4.5 4.5 0 1 0 -9 0zM814.5 279 a4.5 4.5 0 1 0 9 0 a4.5 4.5 0 1 0 -9 0zM1102.5 279 a4.5 4.5 0 1 0 9 0 a4.5 4.5 0 1 0 -9 0zM832.5 279 a4.5 4.5 0 1 0 9 0 a4.5 4.5 0 1 0 -9 0zM1282.5 297 a4.5 4.5 0 1 0 9 0 a4.5 4.5 0 1 0 -9 0zM1048.5 297 a4.5 4.5 0 1 0 9 0 a4.5 4.5 0 1 0 -9 0zM562.5 333 a4.5 4.5 0 1 0 9 0 a4.5 4.5 0 1 0 -9 0zM1174.5 297 a4.5 4.5 0 1 0 9 0 a4.5 4.5 0 1 0 -9 0zM742.5 351 a4.5 4.5 0 1 0 9 0 a4.5 4.5 0 1 0 -9 0zM670.5 333 a4.5 4.5 0 1 0 9 0 a4.5 4.5 0 1 0 -9 0zM634.5 297 a4.5 4.5 0 1 0 9 0 a4.5 4.5 0 1 0 -9 0z' fill='url(%23SvgjsLinearGradient1870)'%3e%3c/path%3e%3cpath d='M999 369L981 351M1017 369L999 351M1035 369L1017 351L999 333L981 333M1071 369L1053 351L1035 351L1017 333M1125 333L1107 351M945 369L927 351L909 351L891 351L873 351L855 351L837 351M963 369L945 351L927 333L909 333L891 333L873 333M1467 297L1449 297L1431 297L1413 297L1395 315L1377 333L1359 333L1341 333L1323 333L1305 333L1287 333L1269 333L1251 333L1233 333L1215 333L1197 333L1179 333L1161 333L1143 333L1125 333L1107 333L1089 351L1071 369L1053 369L1035 369L1017 369L999 369L981 369L963 369L945 369L927 369' stroke='url(%23SvgjsLinearGradient1870)' stroke-width='3'%3e%3c/path%3e%3cpath d='M922.5 369 a4.5 4.5 0 1 0 9 0 a4.5 4.5 0 1 0 -9 0zM976.5 351 a4.5 4.5 0 1 0 9 0 a4.5 4.5 0 1 0 -9 0zM994.5 351 a4.5 4.5 0 1 0 9 0 a4.5 4.5 0 1 0 -9 0zM976.5 333 a4.5 4.5 0 1 0 9 0 a4.5 4.5 0 1 0 -9 0zM1012.5 333 a4.5 4.5 0 1 0 9 0 a4.5 4.5 0 1 0 -9 0zM1102.5 351 a4.5 4.5 0 1 0 9 0 a4.5 4.5 0 1 0 -9 0zM832.5 351 a4.5 4.5 0 1 0 9 0 a4.5 4.5 0 1 0 -9 0zM868.5 333 a4.5 4.5 0 1 0 9 0 a4.5 4.5 0 1 0 -9 0z' fill='url(%23SvgjsLinearGradient1870)'%3e%3c/path%3e%3cpath d='M1377 261L1359 261L1341 261L1323 261L1305 279M1053 279L1035 261L1017 261M1035 279L1017 279L999 279L981 279L963 279L945 279M1089 279L1071 261L1053 261L1035 243L1017 243M1107 261L1089 261L1071 243M1269 243L1251 261L1233 261L1215 261L1197 261L1179 261L1161 261L1143 261L1125 261M1395 261L1377 279L1359 279L1341 279M1467 261L1449 261L1431 261L1413 261L1395 261L1377 261L1359 243L1341 243L1323 243L1305 243L1287 243L1269 243L1251 243L1233 243L1215 243L1197 243L1179 243L1161 243L1143 243L1125 243L1107 261L1089 279L1071 279L1053 279L1035 279L1017 297L999 297L981 297' stroke='url(%23SvgjsLinearGradient1870)' stroke-width='3'%3e%3c/path%3e%3cpath d='M976.5 297 a4.5 4.5 0 1 0 9 0 a4.5 4.5 0 1 0 -9 0zM1300.5 279 a4.5 4.5 0 1 0 9 0 a4.5 4.5 0 1 0 -9 0zM1012.5 261 a4.5 4.5 0 1 0 9 0 a4.5 4.5 0 1 0 -9 0zM940.5 279 a4.5 4.5 0 1 0 9 0 a4.5 4.5 0 1 0 -9 0zM1012.5 243 a4.5 4.5 0 1 0 9 0 a4.5 4.5 0 1 0 -9 0zM1066.5 243 a4.5 4.5 0 1 0 9 0 a4.5 4.5 0 1 0 -9 0zM1120.5 261 a4.5 4.5 0 1 0 9 0 a4.5 4.5 0 1 0 -9 0zM1336.5 279 a4.5 4.5 0 1 0 9 0 a4.5 4.5 0 1 0 -9 0z' fill='url(%23SvgjsLinearGradient1870)'%3e%3c/path%3e%3cpath d='M1179 351L1161 369M1143 369L1125 351M1161 351L1143 351M1467 315L1449 315L1431 315L1413 315L1395 333L1377 351L1359 351L1341 351L1323 351L1305 351L1287 351L1269 351L1251 351L1233 351L1215 351L1197 351L1179 351L1161 351L1143 369L1125 369L1107 369L1089 369L1071 387L1053 387L1035 387L1017 387L999 387L981 387L963 387L945 387' stroke='url(%23SvgjsLinearGradient1870)' stroke-width='3'%3e%3c/path%3e%3cpath d='M940.5 387 a4.5 4.5 0 1 0 9 0 a4.5 4.5 0 1 0 -9 0zM1156.5 369 a4.5 4.5 0 1 0 9 0 a4.5 4.5 0 1 0 -9 0zM1120.5 351 a4.5 4.5 0 1 0 9 0 a4.5 4.5 0 1 0 -9 0zM1138.5 351 a4.5 4.5 0 1 0 9 0 a4.5 4.5 0 1 0 -9 0z' fill='url(%23SvgjsLinearGradient1870)'%3e%3c/path%3e%3cpath d='M1143 207L1125 225L1107 225M1053 207L1035 225L1017 225L999 225L981 225L963 225L945 225M1161 207L1143 225M1089 207L1071 225L1053 225M1215 207L1197 225M1233 225L1215 225M1467 243L1449 243L1431 243L1413 243L1395 243L1377 243L1359 225L1341 225L1323 225L1305 225L1287 225L1269 225L1251 225L1233 225L1215 207L1197 207L1179 207L1161 207L1143 207L1125 207L1107 207L1089 207L1071 207L1053 207L1035 207L1017 207' stroke='url(%23SvgjsLinearGradient1870)' stroke-width='3'%3e%3c/path%3e%3cpath d='M1012.5 207 a4.5 4.5 0 1 0 9 0 a4.5 4.5 0 1 0 -9 0zM1102.5 225 a4.5 4.5 0 1 0 9 0 a4.5 4.5 0 1 0 -9 0zM940.5 225 a4.5 4.5 0 1 0 9 0 a4.5 4.5 0 1 0 -9 0zM1138.5 225 a4.5 4.5 0 1 0 9 0 a4.5 4.5 0 1 0 -9 0zM1048.5 225 a4.5 4.5 0 1 0 9 0 a4.5 4.5 0 1 0 -9 0zM1192.5 225 a4.5 4.5 0 1 0 9 0 a4.5 4.5 0 1 0 -9 0zM1210.5 225 a4.5 4.5 0 1 0 9 0 a4.5 4.5 0 1 0 -9 0z' fill='url(%23SvgjsLinearGradient1870)'%3e%3c/path%3e%3cpath d='M945 405L927 423L909 423L891 423M909 405L891 387L873 387L855 387L837 387M819 405L801 423L783 423L765 423L747 423L729 423M963 405L945 423M747 405L729 387L711 387M873 405L855 423L837 423L819 423L801 441M783 405L765 387M981 405L963 423L945 441L927 441L909 441L891 459L873 459L855 459L837 459M999 405L981 423M1197 369L1179 369M711 405L693 423L675 423M1467 333L1449 333L1431 333L1413 333L1395 351L1377 369L1359 369L1341 369L1323 369L1305 369L1287 369L1269 369L1251 369L1233 369L1215 369L1197 369L1179 387L1161 387L1143 387L1125 387L1107 387L1089 387L1071 405L1053 405L1035 405L1017 405L999 405L981 405L963 405L945 405L927 405L909 405L891 405L873 405L855 405L837 405L819 405L801 405L783 405L765 405L747 405L729 405L711 405L693 405' stroke='url(%23SvgjsLinearGradient1870)' stroke-width='3'%3e%3c/path%3e%3cpath d='M688.5 405 a4.5 4.5 0 1 0 9 0 a4.5 4.5 0 1 0 -9 0zM886.5 423 a4.5 4.5 0 1 0 9 0 a4.5 4.5 0 1 0 -9 0zM832.5 387 a4.5 4.5 0 1 0 9 0 a4.5 4.5 0 1 0 -9 0zM724.5 423 a4.5 4.5 0 1 0 9 0 a4.5 4.5 0 1 0 -9 0zM940.5 423 a4.5 4.5 0 1 0 9 0 a4.5 4.5 0 1 0 -9 0zM706.5 387 a4.5 4.5 0 1 0 9 0 a4.5 4.5 0 1 0 -9 0zM796.5 441 a4.5 4.5 0 1 0 9 0 a4.5 4.5 0 1 0 -9 0zM760.5 387 a4.5 4.5 0 1 0 9 0 a4.5 4.5 0 1 0 -9 0zM832.5 459 a4.5 4.5 0 1 0 9 0 a4.5 4.5 0 1 0 -9 0zM976.5 423 a4.5 4.5 0 1 0 9 0 a4.5 4.5 0 1 0 -9 0zM1174.5 369 a4.5 4.5 0 1 0 9 0 a4.5 4.5 0 1 0 -9 0zM670.5 423 a4.5 4.5 0 1 0 9 0 a4.5 4.5 0 1 0 -9 0z' fill='url(%23SvgjsLinearGradient1870)'%3e%3c/path%3e%3cpath d='M1395 225L1377 207M1089 189L1071 171L1053 171L1035 171M999 189L981 207L963 207L945 207M1017 189L999 171L981 171L963 153L945 153L927 153L909 153L891 153M1413 225L1395 207M981 189L963 189L945 189L927 189L909 189L891 189L873 189L855 189L837 189L819 189L801 189M1467 225L1449 225L1431 225L1413 225L1395 225L1377 225L1359 207L1341 207L1323 207L1305 207L1287 207L1269 207L1251 207L1233 207L1215 189L1197 189L1179 189L1161 189L1143 189L1125 189L1107 189L1089 189L1071 189L1053 189L1035 189L1017 189L999 189L981 189L963 171' stroke='url(%23SvgjsLinearGradient1870)' stroke-width='3'%3e%3c/path%3e%3cpath d='M958.5 171 a4.5 4.5 0 1 0 9 0 a4.5 4.5 0 1 0 -9 0zM1372.5 207 a4.5 4.5 0 1 0 9 0 a4.5 4.5 0 1 0 -9 0zM1030.5 171 a4.5 4.5 0 1 0 9 0 a4.5 4.5 0 1 0 -9 0zM940.5 207 a4.5 4.5 0 1 0 9 0 a4.5 4.5 0 1 0 -9 0zM886.5 153 a4.5 4.5 0 1 0 9 0 a4.5 4.5 0 1 0 -9 0zM1390.5 207 a4.5 4.5 0 1 0 9 0 a4.5 4.5 0 1 0 -9 0zM796.5 189 a4.5 4.5 0 1 0 9 0 a4.5 4.5 0 1 0 -9 0z' fill='url(%23SvgjsLinearGradient1870)'%3e%3c/path%3e%3cpath d='M1125 405L1107 423L1089 423M1467 351L1449 351L1431 351L1413 351L1395 369L1377 387L1359 387L1341 387L1323 387L1305 387L1287 387L1269 387L1251 387L1233 387L1215 387L1197 387L1179 405L1161 405L1143 405L1125 405L1107 405L1089 405L1071 423L1053 423L1035 423' stroke='url(%23SvgjsLinearGradient1870)' stroke-width='3'%3e%3c/path%3e%3cpath d='M1030.5 423 a4.5 4.5 0 1 0 9 0 a4.5 4.5 0 1 0 -9 0zM1084.5 423 a4.5 4.5 0 1 0 9 0 a4.5 4.5 0 1 0 -9 0z' fill='url(%23SvgjsLinearGradient1870)'%3e%3c/path%3e%3cpath d='M1449 207L1431 189L1413 189M1467 207L1449 207L1431 207' stroke='url(%23SvgjsLinearGradient1870)' stroke-width='3'%3e%3c/path%3e%3cpath d='M1426.5 207 a4.5 4.5 0 1 0 9 0 a4.5 4.5 0 1 0 -9 0zM1408.5 189 a4.5 4.5 0 1 0 9 0 a4.5 4.5 0 1 0 -9 0z' fill='url(%23SvgjsLinearGradient1870)'%3e%3c/path%3e%3cpath d='M1071 441L1053 459L1035 477L1017 477L999 477L981 477L963 495L945 495L927 495M1035 441L1017 459L999 459L981 459L963 459L945 459L927 459M1017 441L999 423M1431 369L1413 369M1143 423L1125 423M1467 369L1449 369L1431 369L1413 387L1395 387L1377 405L1359 405L1341 405L1323 405L1305 405L1287 405L1269 405L1251 405L1233 405L1215 405L1197 405L1179 423L1161 423L1143 423L1125 441L1107 441L1089 441L1071 441L1053 441L1035 441L1017 441L999 441L981 441' stroke='url(%23SvgjsLinearGradient1870)' stroke-width='3'%3e%3c/path%3e%3cpath d='M976.5 441 a4.5 4.5 0 1 0 9 0 a4.5 4.5 0 1 0 -9 0zM922.5 495 a4.5 4.5 0 1 0 9 0 a4.5 4.5 0 1 0 -9 0zM922.5 459 a4.5 4.5 0 1 0 9 0 a4.5 4.5 0 1 0 -9 0zM994.5 423 a4.5 4.5 0 1 0 9 0 a4.5 4.5 0 1 0 -9 0zM1408.5 369 a4.5 4.5 0 1 0 9 0 a4.5 4.5 0 1 0 -9 0zM1120.5 423 a4.5 4.5 0 1 0 9 0 a4.5 4.5 0 1 0 -9 0z' fill='url(%23SvgjsLinearGradient1870)'%3e%3c/path%3e%3cpath d='M1143 171L1125 153M1251 189L1233 171L1215 153L1197 153M1179 171L1161 153M1269 189L1251 171M1377 189L1359 171M1467 189L1449 171L1431 171L1413 171L1395 189L1377 189L1359 189L1341 189L1323 189L1305 189L1287 189L1269 189L1251 189L1233 189L1215 171L1197 171L1179 171L1161 171L1143 171L1125 171L1107 171' stroke='url(%23SvgjsLinearGradient1870)' stroke-width='3'%3e%3c/path%3e%3cpath d='M1102.5 171 a4.5 4.5 0 1 0 9 0 a4.5 4.5 0 1 0 -9 0zM1120.5 153 a4.5 4.5 0 1 0 9 0 a4.5 4.5 0 1 0 -9 0zM1192.5 153 a4.5 4.5 0 1 0 9 0 a4.5 4.5 0 1 0 -9 0zM1156.5 153 a4.5 4.5 0 1 0 9 0 a4.5 4.5 0 1 0 -9 0zM1246.5 171 a4.5 4.5 0 1 0 9 0 a4.5 4.5 0 1 0 -9 0zM1354.5 171 a4.5 4.5 0 1 0 9 0 a4.5 4.5 0 1 0 -9 0z' fill='url(%23SvgjsLinearGradient1870)'%3e%3c/path%3e%3cpath d='M1467 387L1449 387L1431 387L1413 405L1395 405L1377 423L1359 423L1341 423L1323 423L1305 423L1287 423L1269 423L1251 423' stroke='url(%23SvgjsLinearGradient1870)' stroke-width='3'%3e%3c/path%3e%3cpath d='M1246.5 423 a4.5 4.5 0 1 0 9 0 a4.5 4.5 0 1 0 -9 0z' fill='url(%23SvgjsLinearGradient1870)'%3e%3c/path%3e%3cpath d='M1107 459L1089 477L1071 477L1053 477L1035 495M1233 423L1215 441L1197 441L1179 459L1161 459M1305 441L1287 459M1269 441L1251 459L1233 459L1215 459L1197 459L1179 477L1161 477M1359 441L1341 459L1323 459L1305 459L1287 477M1467 405L1449 405L1431 405L1413 423L1395 423L1377 441L1359 441L1341 441L1323 441L1305 441L1287 441L1269 441L1251 441L1233 423L1215 423L1197 423L1179 441L1161 441L1143 441L1125 459L1107 459L1089 459' stroke='url(%23SvgjsLinearGradient1870)' stroke-width='3'%3e%3c/path%3e%3cpath d='M1084.5 459 a4.5 4.5 0 1 0 9 0 a4.5 4.5 0 1 0 -9 0zM1030.5 495 a4.5 4.5 0 1 0 9 0 a4.5 4.5 0 1 0 -9 0zM1156.5 459 a4.5 4.5 0 1 0 9 0 a4.5 4.5 0 1 0 -9 0zM1282.5 459 a4.5 4.5 0 1 0 9 0 a4.5 4.5 0 1 0 -9 0zM1156.5 477 a4.5 4.5 0 1 0 9 0 a4.5 4.5 0 1 0 -9 0zM1282.5 477 a4.5 4.5 0 1 0 9 0 a4.5 4.5 0 1 0 -9 0z' fill='url(%23SvgjsLinearGradient1870)'%3e%3c/path%3e%3cpath d='M1359 135L1341 117L1323 117L1305 99M1449 153L1431 135M1377 135L1359 153L1341 153L1323 153L1305 153M1467 153L1449 153L1431 153L1413 153L1395 135L1377 135L1359 135L1341 135L1323 135' stroke='url(%23SvgjsLinearGradient1870)' stroke-width='3'%3e%3c/path%3e%3cpath d='M1318.5 135 a4.5 4.5 0 1 0 9 0 a4.5 4.5 0 1 0 -9 0zM1300.5 99 a4.5 4.5 0 1 0 9 0 a4.5 4.5 0 1 0 -9 0zM1426.5 135 a4.5 4.5 0 1 0 9 0 a4.5 4.5 0 1 0 -9 0zM1300.5 153 a4.5 4.5 0 1 0 9 0 a4.5 4.5 0 1 0 -9 0z' fill='url(%23SvgjsLinearGradient1870)'%3e%3c/path%3e%3c/g%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1869'%3e%3crect width='1440' height='560' fill='white'%3e%3c/rect%3e%3c/mask%3e%3clinearGradient x1='489.6' y1='280' x2='1440' y2='280' gradientUnits='userSpaceOnUse' id='SvgjsLinearGradient1870'%3e%3cstop stop-color='%233a7cc3' offset='0'%3e%3c/stop%3e%3cstop stop-color='rgba(11%2c 64%2c 112%2c 1)' offset='0.88'%3e%3c/stop%3e%3cstop stop-color='rgba(19%2c 76%2c 126%2c 1)' offset='0.9'%3e%3c/stop%3e%3cstop stop-color='rgba(19%2c 76%2c 126%2c 1)' offset='1'%3e%3c/stop%3e%3c/linearGradient%3e%3cmask id='SvgjsMask1871'%3e%3crect width='1440' height='560' fill='white'%3e%3c/rect%3e%3cpath d='M636.75 315 a2.25 2.25 0 1 0 4.5 0 a2.25 2.25 0 1 0 -4.5 0zM762.75 297 a2.25 2.25 0 1 0 4.5 0 a2.25 2.25 0 1 0 -4.5 0zM816.75 279 a2.25 2.25 0 1 0 4.5 0 a2.25 2.25 0 1 0 -4.5 0zM1104.75 279 a2.25 2.25 0 1 0 4.5 0 a2.25 2.25 0 1 0 -4.5 0zM834.75 279 a2.25 2.25 0 1 0 4.5 0 a2.25 2.25 0 1 0 -4.5 0zM1284.75 297 a2.25 2.25 0 1 0 4.5 0 a2.25 2.25 0 1 0 -4.5 0zM1050.75 297 a2.25 2.25 0 1 0 4.5 0 a2.25 2.25 0 1 0 -4.5 0zM564.75 333 a2.25 2.25 0 1 0 4.5 0 a2.25 2.25 0 1 0 -4.5 0zM1176.75 297 a2.25 2.25 0 1 0 4.5 0 a2.25 2.25 0 1 0 -4.5 0zM744.75 351 a2.25 2.25 0 1 0 4.5 0 a2.25 2.25 0 1 0 -4.5 0zM672.75 333 a2.25 2.25 0 1 0 4.5 0 a2.25 2.25 0 1 0 -4.5 0zM636.75 297 a2.25 2.25 0 1 0 4.5 0 a2.25 2.25 0 1 0 -4.5 0z' fill='black'%3e%3c/path%3e%3cpath d='M924.75 369 a2.25 2.25 0 1 0 4.5 0 a2.25 2.25 0 1 0 -4.5 0zM978.75 351 a2.25 2.25 0 1 0 4.5 0 a2.25 2.25 0 1 0 -4.5 0zM996.75 351 a2.25 2.25 0 1 0 4.5 0 a2.25 2.25 0 1 0 -4.5 0zM978.75 333 a2.25 2.25 0 1 0 4.5 0 a2.25 2.25 0 1 0 -4.5 0zM1014.75 333 a2.25 2.25 0 1 0 4.5 0 a2.25 2.25 0 1 0 -4.5 0zM1104.75 351 a2.25 2.25 0 1 0 4.5 0 a2.25 2.25 0 1 0 -4.5 0zM834.75 351 a2.25 2.25 0 1 0 4.5 0 a2.25 2.25 0 1 0 -4.5 0zM870.75 333 a2.25 2.25 0 1 0 4.5 0 a2.25 2.25 0 1 0 -4.5 0z' fill='black'%3e%3c/path%3e%3cpath d='M978.75 297 a2.25 2.25 0 1 0 4.5 0 a2.25 2.25 0 1 0 -4.5 0zM1302.75 279 a2.25 2.25 0 1 0 4.5 0 a2.25 2.25 0 1 0 -4.5 0zM1014.75 261 a2.25 2.25 0 1 0 4.5 0 a2.25 2.25 0 1 0 -4.5 0zM942.75 279 a2.25 2.25 0 1 0 4.5 0 a2.25 2.25 0 1 0 -4.5 0zM1014.75 243 a2.25 2.25 0 1 0 4.5 0 a2.25 2.25 0 1 0 -4.5 0zM1068.75 243 a2.25 2.25 0 1 0 4.5 0 a2.25 2.25 0 1 0 -4.5 0zM1122.75 261 a2.25 2.25 0 1 0 4.5 0 a2.25 2.25 0 1 0 -4.5 0zM1338.75 279 a2.25 2.25 0 1 0 4.5 0 a2.25 2.25 0 1 0 -4.5 0z' fill='black'%3e%3c/path%3e%3cpath d='M942.75 387 a2.25 2.25 0 1 0 4.5 0 a2.25 2.25 0 1 0 -4.5 0zM1158.75 369 a2.25 2.25 0 1 0 4.5 0 a2.25 2.25 0 1 0 -4.5 0zM1122.75 351 a2.25 2.25 0 1 0 4.5 0 a2.25 2.25 0 1 0 -4.5 0zM1140.75 351 a2.25 2.25 0 1 0 4.5 0 a2.25 2.25 0 1 0 -4.5 0z' fill='black'%3e%3c/path%3e%3cpath d='M1014.75 207 a2.25 2.25 0 1 0 4.5 0 a2.25 2.25 0 1 0 -4.5 0zM1104.75 225 a2.25 2.25 0 1 0 4.5 0 a2.25 2.25 0 1 0 -4.5 0zM942.75 225 a2.25 2.25 0 1 0 4.5 0 a2.25 2.25 0 1 0 -4.5 0zM1140.75 225 a2.25 2.25 0 1 0 4.5 0 a2.25 2.25 0 1 0 -4.5 0zM1050.75 225 a2.25 2.25 0 1 0 4.5 0 a2.25 2.25 0 1 0 -4.5 0zM1194.75 225 a2.25 2.25 0 1 0 4.5 0 a2.25 2.25 0 1 0 -4.5 0zM1212.75 225 a2.25 2.25 0 1 0 4.5 0 a2.25 2.25 0 1 0 -4.5 0z' fill='black'%3e%3c/path%3e%3cpath d='M690.75 405 a2.25 2.25 0 1 0 4.5 0 a2.25 2.25 0 1 0 -4.5 0zM888.75 423 a2.25 2.25 0 1 0 4.5 0 a2.25 2.25 0 1 0 -4.5 0zM834.75 387 a2.25 2.25 0 1 0 4.5 0 a2.25 2.25 0 1 0 -4.5 0zM726.75 423 a2.25 2.25 0 1 0 4.5 0 a2.25 2.25 0 1 0 -4.5 0zM942.75 423 a2.25 2.25 0 1 0 4.5 0 a2.25 2.25 0 1 0 -4.5 0zM708.75 387 a2.25 2.25 0 1 0 4.5 0 a2.25 2.25 0 1 0 -4.5 0zM798.75 441 a2.25 2.25 0 1 0 4.5 0 a2.25 2.25 0 1 0 -4.5 0zM762.75 387 a2.25 2.25 0 1 0 4.5 0 a2.25 2.25 0 1 0 -4.5 0zM834.75 459 a2.25 2.25 0 1 0 4.5 0 a2.25 2.25 0 1 0 -4.5 0zM978.75 423 a2.25 2.25 0 1 0 4.5 0 a2.25 2.25 0 1 0 -4.5 0zM1176.75 369 a2.25 2.25 0 1 0 4.5 0 a2.25 2.25 0 1 0 -4.5 0zM672.75 423 a2.25 2.25 0 1 0 4.5 0 a2.25 2.25 0 1 0 -4.5 0z' fill='black'%3e%3c/path%3e%3cpath d='M960.75 171 a2.25 2.25 0 1 0 4.5 0 a2.25 2.25 0 1 0 -4.5 0zM1374.75 207 a2.25 2.25 0 1 0 4.5 0 a2.25 2.25 0 1 0 -4.5 0zM1032.75 171 a2.25 2.25 0 1 0 4.5 0 a2.25 2.25 0 1 0 -4.5 0zM942.75 207 a2.25 2.25 0 1 0 4.5 0 a2.25 2.25 0 1 0 -4.5 0zM888.75 153 a2.25 2.25 0 1 0 4.5 0 a2.25 2.25 0 1 0 -4.5 0zM1392.75 207 a2.25 2.25 0 1 0 4.5 0 a2.25 2.25 0 1 0 -4.5 0zM798.75 189 a2.25 2.25 0 1 0 4.5 0 a2.25 2.25 0 1 0 -4.5 0z' fill='black'%3e%3c/path%3e%3cpath d='M1032.75 423 a2.25 2.25 0 1 0 4.5 0 a2.25 2.25 0 1 0 -4.5 0zM1086.75 423 a2.25 2.25 0 1 0 4.5 0 a2.25 2.25 0 1 0 -4.5 0z' fill='black'%3e%3c/path%3e%3cpath d='M1428.75 207 a2.25 2.25 0 1 0 4.5 0 a2.25 2.25 0 1 0 -4.5 0zM1410.75 189 a2.25 2.25 0 1 0 4.5 0 a2.25 2.25 0 1 0 -4.5 0z' fill='black'%3e%3c/path%3e%3cpath d='M978.75 441 a2.25 2.25 0 1 0 4.5 0 a2.25 2.25 0 1 0 -4.5 0zM924.75 495 a2.25 2.25 0 1 0 4.5 0 a2.25 2.25 0 1 0 -4.5 0zM924.75 459 a2.25 2.25 0 1 0 4.5 0 a2.25 2.25 0 1 0 -4.5 0zM996.75 423 a2.25 2.25 0 1 0 4.5 0 a2.25 2.25 0 1 0 -4.5 0zM1410.75 369 a2.25 2.25 0 1 0 4.5 0 a2.25 2.25 0 1 0 -4.5 0zM1122.75 423 a2.25 2.25 0 1 0 4.5 0 a2.25 2.25 0 1 0 -4.5 0z' fill='black'%3e%3c/path%3e%3cpath d='M1104.75 171 a2.25 2.25 0 1 0 4.5 0 a2.25 2.25 0 1 0 -4.5 0zM1122.75 153 a2.25 2.25 0 1 0 4.5 0 a2.25 2.25 0 1 0 -4.5 0zM1194.75 153 a2.25 2.25 0 1 0 4.5 0 a2.25 2.25 0 1 0 -4.5 0zM1158.75 153 a2.25 2.25 0 1 0 4.5 0 a2.25 2.25 0 1 0 -4.5 0zM1248.75 171 a2.25 2.25 0 1 0 4.5 0 a2.25 2.25 0 1 0 -4.5 0zM1356.75 171 a2.25 2.25 0 1 0 4.5 0 a2.25 2.25 0 1 0 -4.5 0z' fill='black'%3e%3c/path%3e%3cpath d='M1248.75 423 a2.25 2.25 0 1 0 4.5 0 a2.25 2.25 0 1 0 -4.5 0z' fill='black'%3e%3c/path%3e%3cpath d='M1086.75 459 a2.25 2.25 0 1 0 4.5 0 a2.25 2.25 0 1 0 -4.5 0zM1032.75 495 a2.25 2.25 0 1 0 4.5 0 a2.25 2.25 0 1 0 -4.5 0zM1158.75 459 a2.25 2.25 0 1 0 4.5 0 a2.25 2.25 0 1 0 -4.5 0zM1284.75 459 a2.25 2.25 0 1 0 4.5 0 a2.25 2.25 0 1 0 -4.5 0zM1158.75 477 a2.25 2.25 0 1 0 4.5 0 a2.25 2.25 0 1 0 -4.5 0zM1284.75 477 a2.25 2.25 0 1 0 4.5 0 a2.25 2.25 0 1 0 -4.5 0z' fill='black'%3e%3c/path%3e%3cpath d='M1320.75 135 a2.25 2.25 0 1 0 4.5 0 a2.25 2.25 0 1 0 -4.5 0zM1302.75 99 a2.25 2.25 0 1 0 4.5 0 a2.25 2.25 0 1 0 -4.5 0zM1428.75 135 a2.25 2.25 0 1 0 4.5 0 a2.25 2.25 0 1 0 -4.5 0zM1302.75 153 a2.25 2.25 0 1 0 4.5 0 a2.25 2.25 0 1 0 -4.5 0z' fill='black'%3e%3c/path%3e%3c/mask%3e%3c/defs%3e%3c/svg%3e");
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: 120% 120%;
+}
+/************** Nav section ********************/
+nav{
+    padding: 3.1rem 11rem;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 0;
+    animation: opacity-menu 1200ms;
+}
+.nav{
+    padding-top: 3.5rem;
+}
+nav .logo{
+    display: flex;
+    width: 40px;
+    height: 40px;
+    align-items: center;
+}
+nav .logo img{
+    height: 1.6rem;
+}
+nav .logo:after{
+    content: 'Back home';
+    position: absolute;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(50 100 192);
+    font-size: .7rem;
+    align-self: center;
+    margin-left: 4rem;
+    opacity: 0;
+    transform: translateX(10px);
+    transition: transform 400ms
+        cubic-bezier(0, 0.45, 0.15, 1),opacity 400ms
+        cubic-bezier(0, 0.45, 0.15, 1);
+}
+nav .logo:hover::after{
+    opacity: 1;
+    transform: translateX(0);
+}
+nav .contain-nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 30%;
+}
+
+.contain-nav-a{
+    width: 15% !important;
+}
+nav .contain-nav .social-icon a{
+    display: flex;
+    justify-content: center;
+    transform: scale(1);
+    height: .8rem;
+    width: .8rem;
+    border-radius: 50%;
+    margin-right: 2rem;
+    text-decoration: none;
+    transition: all .5s ease;
+}
+nav .contain-nav .social-icon a:hover{
+    background: var(--blue);
+    border-radius: 50%;
+    width: 2rem;
+    height: 2rem;
+    margin-left: -.6rem;
+    margin-right: 1.4rem;
+}
+.fab{
+    color: var(--white);
+    font-size: .8rem;
+    margin: auto;
+}
+nav .contain-nav .menu a{
+    font-family: var(--font-1);
+    color: var(--white);
+    font-size: .7rem;
+    font-weight: 500;
+}
+nav .contain-nav .menu a:hover{
+    color: var(--blue);
+}
+nav .contain-nav .menu a svg{
+    margin-left: 14px;
+    margin-bottom: -2px;
+    transition: all .5s ease;
+}
+nav .contain-nav .menu a:hover svg{
+    transform: translateX(10px);
+}
+/*******X******* Nav section **********X**********/
+/*************** Header Content *****************************/
+.content{
+    margin-left: 8rem;
+}
+.content .tag svg{
+    margin: 0 30px;
+}
+.tag{
+    font-family: var(--font-6);
+    color: var(--blue);
+    font-size: .8rem;
+    margin-left: 11rem;
+    margin-bottom: 1.5rem;
+    display: flex;
+    align-items: center;
+}
+.content .intro h1{
+    margin-top: .7rem;
+    width: 61%;
+    font-family: var(--font-4);
+    color: var(--white);
+    font-weight: 700;
+    line-height: 5.3rem;
+    font-size: 4.5rem;
+}
+.content .intro{
+    animation: fadeInBottomRight 1100ms cubic-bezier(0, 0.45, 0.15, 1);
+}
+.short-line{
+    width: 3rem;
+    border: none;
+    background: var(--blue);
+    height: 3px;
+    border-radius: 5px;
+    margin-top: 15px;
+}
+.content .intro .intro-content .text{
+   font-family: var(--font-1);
+    font-size: .7rem;
+    color: var(--text-gray);
+    line-height: 1.2rem;
+    width: 33%;
+    margin-top: 1.5rem;
+}
+.btn{
+    width: 13rem;
+    height: 3.4rem;
+    background: var(--blue);
+    font-family: 'Roboto', sans-serif;
+    font-weight: 900;
+    font-size: .8rem;
+    padding: 15px 20px;
+    margin-top: 1.7rem;
+    position: relative;
+    overflow: hidden;
+    border: none;
+    cursor: pointer;
+}
+.btn::before{
+    content: " ";
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 30rem;
+    height: 30rem;
+    background: var(--after--blue);
+    transition: all .1s ease;
+    border-radius: 50%;
+    transform: translate(260px, -250px);
+    opacity: -1;
+}
+.tbtn{
+    color: var(--white);
+    display: inline-block;
+    transition: all .2s ease;
+}
+.ffbtn{
+    position: absolute;
+    top: 1.2rem;
+    left: 2.8rem;
+    color: var(--white);
+    transform: translateX(4rem);
+    opacity: 0;
+    transition: all .2s ease;
+}
+.btn:hover::before{
+    transform: translate(50px, -210px);
+    opacity: 1;
+}
+.btn:hover a .tbtn{
+    transform: translateX(-4rem);
+    opacity: 0;
+}
+.btn:hover a .ffbtn{
+    opacity: 1;
+    transform: translateX(0);
+}
+/********X******* Header Content ***************X**************/
+/*******X******* header section **********X**********/
+/********************** Hero Section ***************************/
+.hero{
+    background: var(--black);
+    width: 100%;
+    height: 100vh;
+    color: var(--text-gray);
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+}
+/******************** Hero Line***********************/
+.hero-line{
+    width: 56%;
+    color: var(--white);
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+}
+.hero-line p{
+    font-family: var(--font-6);
+    font-size: 1.4rem;
+    line-height: 2.7rem;
+    font-weight: 400;
+    letter-spacing: -0.02rem;
+}
+.h-line-img{
+    width: 3rem;
+}
+.w-1{
+    font-size: .7rem;
+    color: var(--text-gray);
+    margin-right: 5rem;
+}
+.w-2{
+    color:var(--blue);
+    font-size: 1.3rem;
+}
+.w-3{
+    text-decoration: underline;
+    color: var(--white);
+    display: inline-block;
+    text-underline-offset: .1rem;
+}
+.w-3:hover{
+    color: var(--heading);
+}
+.w-4{
+    display: inline-block;
+    color: var(--text-gray);
+    font-size: .7rem;
+    text-transform: uppercase;
+    letter-spacing: -0.01rem;
+}
+/******************** Button***********************/
+.h-btn{
+    width: 30rem;
+    display: grid;
+    grid-auto-flow: column;
+    margin-top: 1rem;
+}
+.btn-2{
+    background: var(--after--blue);
+}
+.btn-2::before{
+    background: var(--black);
+}
+.btn-2:hover{
+    border: .1rem solid var(--white);
+}
+.btn-3{
+    background: transparent;
+    border: .1rem solid var(--white);
+}
+.btn-3:hover{
+    border: none;
+}
+.h-btn-1{
+    color: var(--white);
+    display: inline-block;
+    transition: all .2s ease;
+}
+.h-btn-2{
+    position: absolute;
+    top: 1.2rem;
+    left: 4.2rem;
+    color: var(--white);
+    transform: translateX(4rem);
+    opacity: 0;
+    transition: all .2s ease;
+}
+.btn:hover a .h-btn-1{
+    transform: translateX(-4rem);
+    opacity: 0;
+}
+.btn:hover a .h-btn-2{
+    opacity: 1;
+    transform: translateX(0);
+}
+/**********X********** Button**********X*************/
+/**********X********** Hero Line************X***********/
+/*********************** Hero Slider************************/
+.hwrap{
+    overflow: hidden;
+}
+.hero-slider{
+    display: flex;
+    animation: animate 15s linear infinite;
+}
+.hero-slider div{
+    flex-shrink: 0;
+    padding: 2rem 7rem;
+    display: flex;
+    align-items: center;
+    color: var(--white);
+    font-family: var(--font-9);
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+.hero-slider div svg{
+    width: 3rem;
+    fill: var(--white);
+    padding-right: 1rem;
+}
+@keyframes animate{
+    0%{
+        transform: translateX(0);
+    }
+    100%{
+        transform: translateX(-150%);
+    }
+}
+/***********X************ Hero Slider***********X*************/
+/***********X*********** Hero Section **************X*************/
+/************************* Case and Project *******************************/
+.work{
+    background: var(--black);
+    width: 100%;
+}
+.works{
+    margin: 10rem 3rem 0 5rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    flex-direction: row;
+}
+.work .outline-title h1{
+    font-size: 9rem;
+    margin-left: 6rem;
+    color: var(--black);
+    -webkit-text-stroke: 0.3vw var(--heading);
+}
+.work .outline-title h1:nth-child(2){
+    margin-left: 25rem;
+    margin-top: -3rem;
+}
+/**************************** Project details **********************************/
+.project{
+    border: .1rem solid var(--border);
+}
+.project a{
+    color: var(--text-gray);
+}
+.project-img img{
+    width: 100%;
+}
+.project-desc{
+    padding: 1.8rem 2rem 5rem 4rem;
+}
+.project-num{
+    color: var(--text-gray);
+    font-size: 1rem;
+    font-family: var(--font-2);
+    font-weight: 600;
+}
+span.arrow{
+    position: relative;
+    display: inline-block;
+    background-color: var(--white);
+    height: 1px;
+    width: 40px;
+    top: -5px;
+    margin: 0 20px;
+    transition: width 400ms;
+}
+span.arrow::before{
+    top: 0;
+    transform: rotate(0);
+    opacity: 0;
+    content: "";
+    position: absolute;
+    background: var(--white);
+    height: 1px;
+    width: 10px;
+    right: -2px;
+    margin-right: 0;
+    backface-visibility: hidden;
+    transition: transform 400ms, top 400ms, opacity 200ms;
+}
+.arrow::after{
+    top: 0;
+    transform: rotate(0);
+    opacity: 0;
+    content: "";
+    position: absolute;
+    background: var(--white);
+    height: 1px;
+    width: 10px;
+    right: -2px;
+    margin-right: 0;
+    backface-visibility: hidden;
+    transition: transform 400ms, top 400ms, opacity 200ms;
+}
+.project-clint{
+    position: absolute;
+    transform: translateX(0);
+    opacity: 1;
+    transition: transform 400ms, opacity 200ms, color 400ms;
+    color: var(--text-gray);
+}
+.project-view{
+    position: absolute;
+    transform: translateX(-10px);
+    opacity: 0;
+    transition: transform 400ms, opacity 200ms, color 400ms;
+    color: var(--text-gray);
+}
+.project-desc h3{
+    margin: 2rem 0;
+    font-size: 1.5rem;
+    color: var(--white);
+    line-height: 2.6rem;
+}
+.project-desc p{
+    font-size: 1rem;
+    line-height: 1.8rem;
+}
+.project-1{
+    width: 60%;
+    margin-bottom: 8rem;
+}
+.project-2{
+    width: 35%;
+    align-self: flex-end;
+}
+.project-3{
+    width: 45%;
+    margin: 5rem 0 11.25rem 0;
+}
+.project-4{
+    width: 45%;
+    margin-top: 16.25rem;
+}
+.project-5{
+    width: 50%;
+    margin: 5rem 0 0 26.25rem;
+}
+/**************************** Project desc hover  ****************************************/
+.project:hover{
+    background: var(--border);
+    transition: background 400ms;
+}
+.project a:hover .project-num{
+    color: var(--white);
+}
+.project a:hover .arrow{
+    width: 50px;
+}
+.project a:hover .arrow::before{
+    top: -3px;
+    transform: rotate(30deg);
+    margin-left: 5px;
+    opacity: 1;
+}
+.project a:hover .arrow::after{
+    top: 3px;
+    transform: rotate(-30deg);
+    margin-left: 5px;
+    opacity: 1;
+}
+.project a:hover .project-clint{
+    transform: translateX(30px);
+    opacity: 0;
+    color: #F3F2F4;
+}
+.project a:hover .project-view{
+    transform: translateX(10px);
+    opacity: 1;
+    color: #F3F2F4;
+}
+/**************X************** Project desc hover  *********************X*******************/
+/**************X************** Project details       *****************X****************/
+/**********X*************** Case and Project ****************X***************/
+/********************** Contact Info ***************************/
+.contact-info{
+    background: var(--black);
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+.contact-info h2{
+    color: var(--white);
+    font-size: 6.5rem;
+    font-family: var(--font-4);
+    font-weight: 500;
+    line-height: 3.8rem;
+    position: absolute;
+    top: 40%;
+    left: 45%;
+    transform: translate(-40% , -50%);
+}
+.contact-info h2 a{
+    color: var(--after--blue);
+    text-decoration: underline;
+    margin-left: 2.6rem;
+}
+.contact-info h2 a svg{
+    width: 5rem;
+    height: 5rem;
+}
+.contact-info h2 a span{
+    font-size: .8rem;
+    vertical-align: text-top;
+    color: var(--text-gray);
+}
+/************X********** Contact Info **************X*************/
+/*********************** Information Content *************************/
+.information{
+    background: var(--black);
+    margin-bottom: 5rem;
+}
+.info-content{
+    display: flex;
+    margin-bottom: 10rem;
+}
+.info-content .about{
+    width: 35%;
+    background: var(--heading);
+    padding: 60px;
+    margin-bottom: 8%;
+}
+.info-content .about .title{
+    color: var(--black);
+    font-size: 2.1rem;
+}
+.info-content .about p{
+    margin-top: 1.9rem;
+    color: var(--black);
+    line-height: 2rem;
+    font-size: 1.1rem;
+}
+.info-content .about .line{
+    height: .1rem;
+    width: 100%;
+    margin: 60px 0 30px;
+    background: var(--after--blue);
+}
+.info-content .about a{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    color: var(--black);
+}
+.info-content .about a svg{
+    transition: transform 400ms cubic-bezier(0, 0.45, 0.15, 1);
+    margin-left: 20px;
+}
+.info-content .about a:hover svg{
+    transform: translateX(20px);
+}
+.info-content .yeah{
+    width: 39%;
+    margin: 120px 0 0 140px;
+    display: flex;flex-direction: column;
+}
+.info-content .yeah .tag{
+    margin-bottom: 1.2rem;
+    color: var(--heading);
+    font-size: 1rem;
+    margin-left: 0rem;
+}
+.info-content .yeah .title{
+    font-size: 3.3rem;
+    color: var(--white);
+}
+.info-content .yeah p{
+    margin: 20px 0;
+    color: var(--text-gray);
+}
+.info-content .yeah p a:hover{
+    color: var(--heading);
+}
+.info-content .yeah .contact{
+    margin-top: 2.8rem;
+    border: 1px solid var(--foot-text);
+    display: flex;
+    position: relative;
+    align-items: center;
+    overflow: hidden;
+    cursor: pointer;
+    height: 5rem;
+}
+.contact::before{
+    content: '';
+    background-color: var(--heading);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform: skew(0, 10deg) rotate(10deg) translateY(250px);
+    transition: transform 400ms;
+}
+.contact .icon{
+    height: 100%;
+    padding: 0 40px;
+    margin-right: 40px;
+    display: flex;
+    box-sizing: border-box;
+    border-right: 1px solid rgba(243,242,244,0.3);
+    justify-content: center;
+    align-items: center;
+}
+.contact .mail{
+    font-family: 'Averta', sans-serif;
+    color: var(--white);
+    font-size: 1.4vw;
+    transform: scale(1);
+    opacity: 1;
+    transition: transform 400ms cubic-bezier(0, 0.45, 0.15, 1),opacity 400ms cubic-bezier(0, 0.45, 0.15, 1);
+}
+.contact:hover .mail{
+    color: var(--foot-text);
+}
+.contact .mail::before{
+    content: attr(data-status);
+    font-size: 16px;
+    position: absolute;
+    top: calc(50% - 8px);
+    color: var(--white);
+    font-family: "Averta",sans-serif;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 400ms;
+}
+.contact:hover::before{
+    transform: skew(0, 0) rotate(0) translateY(0);
+}
+.contact:hover .mail::before{
+    opacity: 1;
+}
+/************X******** Information Content ***********X*************/
+/********************** Footer*****************************/
+footer{
+    background: var(--black);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 40px 100px 40px;
+    box-sizing: border-box;
+}
+footer .social{
+    border-bottom: 1px solid var(--foot-text);
+    border-top: 1px solid var(--foot-text);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0 20px;
+    box-sizing: border-box;
+    height: 90px;
+    width: calc(50% - 160px);
+}
+footer .social a{
+    display: flex;
+    align-items: flex-start;
+}
+footer .social a:hover{
+    color:var(--heading)
+}
+footer .social a svg{
+    margin-right: 14px;
+    fill: var(--white);
+}
+footer .divider{
+    height: 40px;
+    width: 1px;
+    background-color: var(--foot-text);
+}
+footer .back-btn a{
+    text-decoration: underline;
+    font-size: .8rem;
+    display: flex;
+}
+footer .back-btn a:hover{
+    color: var(--heading);
+}
+footer .back-btn a svg{
+    transform: rotate(-90deg);
+    margin-right: .6rem;
+}
+footer .comment{
+    border-bottom: 1px solid var(--foot-text);
+    border-top: 1px solid var(--foot-text);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0 20px;
+    box-sizing: border-box;
+    height: 90px;
+    width: calc(50% - 160px);
+}
+footer .comment p{
+    display: flex;
+    align-items: flex-start;
+    color: var(--white);
+}
+.comment a{
+    font-weight: 600;
+}
+.comment a:hover{
+    text-decoration: underline;
+    color: var(--heading);
+}
+/************X********** Footer **************X***************/
+/******************** Contact From *************************/
+.Contact-content h1{
+    color: var(--white);
+    font-size: 10rem;
+    font-family: var(--font-9);
+    font-weight: 800;
+}
+.Contact-content h1 span{
+    color: var(--black);
+    -webkit-text-stroke: .1rem var(--white);
+    margin-right: 1.2rem;
+}
+section .from-width{
+    width: 100%;
+    align-items: center;
+    margin-top: 3rem;
+}
+.name{
+    display: flex;
+    justify-content: space-between;
+}
+section .col-1{
+    width: 48%;
+}
+section .col-2{
+    width: 100%;
+    margin-top: 3rem;
+}
+section .from-width .form-input{
+    position: relative;
+    cursor: text;
+    padding: 1.7rem 0rem .8rem 0rem;
+    width: 100%;
+}
+section .from-width .form-input-feild{
+    width: 100%;
+    border: none;
+    background: var(--input);
+    outline: none;
+    color: var(--white);
+    position: relative;
+    font-weight: 300;
+    font-size: 1rem;
+    padding: 1.8rem 1rem 1rem 1rem;
+}
+section .from-width .form-input-border{
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+}
+section .form-label{
+    position: absolute;
+    font-family: 'Roboto', sans-serif;
+    font-size: .8rem;
+    font-weight: 100;
+    left: 1rem;
+    top: 1.6rem;
+    color:var(--white);
+    overflow: hidden;
+    text-overflow: ellipsis;
+    transition: all .3s ease;
+    width: 12rem;
+}
+.phone-sizing{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: .5rem;
+    margin-bottom: .8rem;
+    height: 4rem;
+    background: var(--input);
+}
+.phone-sizing input{
+    background: var(--input);
+}
+.telephone{
+    padding: 0 1rem !important;
+}
+.iti{
+    width: 15%;
+}
+#ccode{
+    width: 12%;
+    background: var(--input);
+    color: var(--white);
+    border: none;
+}
+.iti__flag-container{
+    padding-left: .7rem;
+}
+#telephone{
+    border: none;
+    width: 100%;
+    height: 2.5rem;
+    color: var(--text-gray);
+    padding-left: 4rem;
+    padding-top: .7rem;
+    outline: none;
+}
+.level-sizing{
+    width: 75%;
+    height: 3rem;
+}
+.tel-msg-error{
+    position: absolute;
+    top: 3.3rem;
+    left: -7.1rem;
+    color: var(--red);
+    font-size: .7rem;
+    margin-top: -.1rem;
+    margin-bottom: .3rem;
+    display: none;
+}
+.form-msg-error{
+    color: var(--red);
+    font-size: .7rem;
+    margin-top: -.4rem;
+    margin-bottom: 1rem;
+    display: none;
+}
+.error-input{
+    margin-bottom: 2rem;
+}
+.form-text-error{
+    color: var(--red) !important;
+}
+.form-border-error{
+    border: 1px solid var(--red) !important;
+}
+.form-input-feild:focus ~ .form-label, .form-input-feild:not(:placeholder-shown).form-input-feild:not(:focus) ~ .form-label{
+    top: .4rem;
+    left: .4rem;
+    font-size: .6rem;
+    color: var(--text-gray);
+}
+.form-input-feild:focus ~ .form-input-border{
+    border: 1px solid var(--text-gray);
+}
+.form-input-feild:focus ~ 
+.textarea-heading{
+    color: var(--white);
+    font-size: 1.4rem;
+    margin-bottom: .5rem;
+    width: 100%;
+}
+.textarea{
+    resize: none;
+    padding: 1rem;
+    padding-top: 1.5rem;
+    width: 100%;
+    height: 10rem;
+    color: var(--white);
+    background: var(--input);
+    outline: none;
+    border: none;
+}
+.textarea:focus{
+    border: 1px solid var(--text-gray);
+    background: var(--hover);
+}
+.textarea-sizing .form-label{
+    top: -6.1rem !important;
+    left: 1.2rem !important;
+}
+.textarea:focus ~ .form-label, .textarea:not(:placeholder-shown).textarea:not(:focus) ~ .form-label{
+    top: -7rem !important;
+    left: .5rem !important;
+    font-size: .6rem !important;
+}
+.contact-btn{
+    width: 100% !important;
+    height: 3.4rem;
+    margin-top: 3.5rem;
+}
+.btn a .sbtn{
+    left: 18.3rem;
+    transform: translateX(5.5rem);
+    transition: all .3s ease;
+}
+.btn a .cbtn{
+    transition: all .3s ease;
+}
+.contact-btn:hover a .cbtn{
+    transform: translateX(-4.5rem);
+}
+.contact-btn::before{
+    width: 45rem;
+    height: 45rem;
+    top: -205px;
+    right: -180px;
+    transition: all .25s ease;
+}
+.contact-btn:hover::before{
+    transform: translate(-150px, -100px);
+}
+.question{
+    margin-top: 3rem;
+}
+.question .form-label{
+    font-size: .7rem;
+}
+/***********X********* Contact From ************X*************/
+/******************** About Us ***********************/
+.about-us h1{
+    color: var(--white);
+    font-family: var(--font-9);
+    font-size: 21rem;
+    font-weight: 900;
+    line-height: 20rem;
+    text-align: center;
+}
+.about-us h1 .s1{
+    -webkit-text-stroke: .2rem var(--white);
+    color: transparent;
+}
+.about-us h1 .s3{
+    position: relative;
+    left: -160px;
+    top: 0;
+    color: transparent;
+    -webkit-text-stroke: .2rem var(--blue);
+}
+.about-us h1 span img{
+    width: 20rem;
+    position: absolute;
+    top: 130px;
+    left: 885px;
+}
+/*********************** About Details ****************************/
+.align{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+.article{
+    width: 65%;
+    margin: 20REM 0;
+    line-height: 2.7rem;
+    display: grid;
+    grid-gap: 3rem;
+}
+.article p{
+    font-size: 1.5rem;
+    font-weight: 500;
+    font-family: var(--font-5);
+}
+.f{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+.article .f-p2{
+    width: 65%;
+}
+.f-img{
+    width: 13rem;
+}
+.f-img img{
+    width: 10rem;
+}
+.f-img p{
+    font-size: .7rem;
+}
+.f-p3{
+    margin-top: -3rem;
+}
+.f-img p span{
+    color: var(--text-gray);
+}
+.f-btn{
+    width: 37rem;
+}
+.f-btn .btn{
+    width: 16rem;
+}
+.f-btn .btn:hover::before{
+    transform: translate(40px, -190px);
+}
+.f-btn .btn-3 .h-btn-2{
+    left: 3.5rem;
+}
+.f-btn .btn-2 .h-btn-2{
+    left: 4.5rem;
+}
+/***********X************ About Details ***************X*************/
+/************************** Value ****************************/
+.value span h1{
+    text-align: left;
+    font-size: 10rem;
+    line-height: 11rem;
+    margin-left: 7rem;
+    color: var(--black);
+    -webkit-text-stroke: .3rem var(--heading);
+    text-transform: uppercase;
+}
+.value span h1:nth-last-child(1){
+    margin-left: 10rem;
+}
+/*************************** Value Details *********************************/
+.value-content{
+    width: 65%;
+    margin-left: 17rem;
+    margin-top: 5rem;
+    margin-bottom: 10rem;
+}
+.value-content-header{
+    width: 35rem;
+}
+.value-content-header h1{
+    font-size: 1.5rem;
+    font-weight: 500;
+    font-family: var(--font-5);
+    line-height: 2rem;
+    text-align: left;
+}
+.process-list{
+    margin-top: 3rem;
+}
+.process-list ul{
+    display: flex;
+    list-style-type: none;
+    justify-content: space-between;
+}
+.process-list ul li{
+    width: 20%;
+}
+.process-list ul li .number{
+    width: 5rem;
+    height: 5rem;
+    font-size: 1.5rem;
+    font-weight: 700;
+    background: var(--after--blue);
+    padding: 35px 20px 20px 20px;
+    border-radius: 8px 20px 8px 8px;
+}
+.process-list ul li h3{
+    margin: 2rem 0;
+    font-size: 1.5rem;
+}
+.process-list ul li p{
+    color: var(--text-gray);
+    line-height: 1.9rem;
+}
+/****************X*********** Value Details ****************X*****************/
+/************X************** Value **************X**************/
+/*************************** Team ****************************/
+.team{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.team-header h1{
+     text-transform: uppercase;
+     color: transparent;
+     font-size: 15rem;
+     line-height: 15rem;
+     color: var(--white);
+}
+.team-header h1:nth-child(2){
+    color: transparent;
+    -webkit-text-stroke: .3rem var(--heading);
+}
+.team-article{
+    width: 60%;
+    margin: 15rem 0;
+}
+.team-article .a-p1{
+    font-size: 1.375rem;
+    font-weight: 500;
+    font-family: var(--font-5);
+    line-height: 2.5rem;
+}
+.a-p1 .w-1{
+    margin-right: 1.5rem;
+}
+.a-p2{
+    font-size: .85rem;
+    color: var(--text-gray);
+    width: 65%;
+    line-height: 1.8rem;
+    margin: 2rem 0;
+}
+.team-article ul{
+    margin-left: 1.2rem;
+    color: var(--heading);
+}
+.team-article ul li{
+    line-height: 1.7;
+    list-style-type: "— ";
+    list-style-position: outside;
+}
+/************************** Team members ********************************/
+.members{
+    margin: 0 7rem 7rem 7rem;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.members img{
+    width: 30rem;
+}
+.members-description{
+    width: 30rem;
+}
+.members-description h2{
+    font-size: 1.5rem;
+    font-family: var(--font-1);
+}
+.members-description a:hover{
+    color: var(--heading);
+}
+.members-description hr{
+    width: 4rem;
+    margin-top: 1rem;
+}
+.members-details{
+    display: flex;
+    align-items: center;
+    margin-top: 3rem;
+}
+.members-details img{
+    width: 2rem;
+    border-radius: 50% 50%;
+}
+.members-details p{
+    font-weight: 600;
+    margin-left: 1rem;
+    font-size: .7rem;
+}
+.members-details p span{
+    color: var(--text-gray);
+    font-size: .6rem;
+}
+/*************X************* Team members ****************X****************/
+/*************X************** Team *************X***************/
+/************************** Expection **************************/
+.expect{
+    margin-top: 25rem;
+}
+.expection{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.expection-header{
+    font-size: 4rem;
+    text-align: center;
+    font-family: var(--font-1);
+    margin-bottom: 10rem;
+}
+.expect-details{
+    width: 35rem;
+}
+.expect-details h2{
+    font-size: 7rem;
+    font-family: var(--font-4);
+}
+.expect-details p{
+    color: var(--text-gray);
+    line-height: 2rem;
+    margin-bottom: 1rem;
+}
+.expect-details a{
+    font-size: .9rem;
+    font-family: var(--font-4);
+}
+.expect-details a:hover{
+    text-decoration: underline;
+    color: var(--heading);
+}
+.expect-details span{
+    display: flex;
+    align-items: center;
+}
+.expect-details span svg{
+    transform: rotate(90deg);
+    width: .8rem;
+    margin-right: .5rem;
+}
+/*************X************* Expection ************X**************/
+/***********X********* About Us ************X***********/
+/************************** Our Work **************************************/
+.work-header{
+    margin-top: 6rem;
+}
+.work-header h1{
+    font-size: 21rem;
+    text-align: center;
+    line-height: 20rem;
+    font-weight: 700;
+    font-family: var(--font-4);
+}
+.work-header h1:nth-child(2){
+    color: transparent;
+    -webkit-text-stroke: .3rem var(--heading);
+}
+.work-list{
+    margin-top: 20rem;
+}
+/************X************** Our Work *******************X*******************/
+/************************* Tanvir Hossen ***************************/
+.introduction{
+    padding: 0 2.6rem;
+    margin-bottom: 10rem;
+}
+.our{
+    margin-top: 10rem;
+}
+.our-title{
+    margin-left: 8rem;
+    margin-top: 5rem;
+}
+.our-title h1{
+    font-size: 7vw;
+    line-height: 9vw;
+    animation: fadeInBottomRight 1100ms cubic-bezier(0, 0.45, 0.15, 1);
+}
+.our-title .outline-title{
+    font-size: 9vw;
+    line-height: 9.4vw;
+    color: transparent;
+    -webkit-text-stroke: .2rem var(--heading);
+}
+.our-intro{
+    display: flex;
+    justify-content: space-between;
+    padding-left: 6.5rem;
+    margin-top: 2.5rem;
+}
+.our-text{
+    padding-top: 2rem;
+    width: 40%;
+    font-size: .94rem;
+    line-height: 1.8rem;
+    color: var(--text-gray);
+}
+.intro-text{
+    font-size: 1.7rem;
+    line-height: 2.6rem;
+    font-weight: 700;
+    font-family: var(--font-5);
+    display: block;
+    color: var(--white);
+}
+.our-picture{
+    width: 45%;
+    z-index: 20;
+    padding-right: 3rem;
+}
+.our-picture img{
+    width: 100%;
+}
+.our-services{
+    display: flex;
+    margin-top: -3rem;
+}
+.content-services{
+    background: var(--heading);
+    padding: 100px 140px;
+    width: 65%;
+}
+.content-services h2{
+    font-size: 3rem;
+    color: var(--black);
+    font-family: var(--font-3);
+}
+.content-services p{
+    color: var(--black);
+    line-height: 1.9rem;
+    font-weight: 400;
+}
+.content-services .text{
+    margin: 2.5rem 0;
+}
+.content-services ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.content-services ul li{
+    width: 46%;
+    margin-top: 3rem;
+    font-size: 24px;
+    color: var(--black);
+    font-weight: 600;
+}
+.content-services ul li p{
+    margin-top: 1.2rem;
+    font-size: 1rem;
+}
+.resume{
+    margin: 220px 0 0 60px;
+    width: 23%;
+}
+.resume h3{
+    display: flex;
+    align-items: center;
+    margin: 2rem 0;
+}
+.resume h3 svg{
+    margin-right: 1rem;
+}
+.resume p{
+    margin-bottom: 1.9rem;
+    color: var(--text-gray);
+}
+.resume .btn{
+    background: transparent;
+    border: .1rem solid var(--heading);
+}
+.resume .btn:hover{
+    border: none;
+}
+.resume .btn .ffbtn{
+    left: 4.2rem;
+}
+/***********X************** Tanvir Hossen *************X**************/
+/********************* Responsive ****************************/
+/************************** Main page ****************************/
+/*********************** Dekstop Size *************************/
+@media screen and (min-width: 1400px){
+    header{
+        height: 100vh;
+    }
+    nav .logo img{
+        height: 2.5rem;
+    }
+    .fab{
+        font-size: 1.2rem;
+    }
+    nav .contain-nav .menu a{
+        font-size: 1rem;
+    }
+    nav{
+        padding: 6rem 12rem;
+    }
+    nav .contain-nav .social-icon a{
+        width: 1.7rem;
+    }
+    nav .contain-nav .menu a svg{
+        width: 40;
+        height: 22;
+    }
+    nav .logo::after{
+        font-size: 1rem;
+        margin-left: 6rem;
+    }
+    .tag{
+        font-size: 1.2rem;
+    }
+    .content .intro h1{
+        width: 65%;
+        line-height: 9rem;
+        font-size: 7rem;
+    }
+    .short-line{
+        width: 7rem;
+        height: 5px;
+    }
+    .content .intro .intro-content .text{
+        font-size: 1rem;
+        line-height: 1.6rem;
+        width: 35%;
+    }
+    .btn{
+        width: 19rem;
+        height: 4.5rem;
+        font-size: 1.1rem;
+        margin-top: 2.5rem;
+    }
+    .ffbtn{
+        top: 1.6rem;
+        left: 4.2rem;
+    }
+    .hero-line{
+        width: 58%;
+    }
+    .w-1, .w-4{
+        font-size: 1rem;
+    }
+    .w-2{
+        font-size: 2.1rem;
+    }
+    .hero-line p{
+        font-size: 2.05rem;
+        line-height: 3.7rem;
+    }
+    .h-btn{
+        width: 45rem;
+    }
+    .h-btn-2{
+        top: 1.7rem;
+        left: 6.7rem;
+    }
+    .h-btn .btn{
+        width: 20rem;
+        height: 5rem;
+    }
+    .hero-slider div{
+        font-size: 3.8rem;
+        padding: 4rem 12rem;
+    }
+    .hero-slider div svg{
+        width: 6rem;
+        padding-right: 2rem;
+    }
+    @keyframes animate{
+        100%{
+            transform: translateX(-180%);
+        }
+    }
+    .work .outline-title h1{
+        font-size: 13rem;
+    }
+    .work .outline-title h1:nth-child(2){
+        margin-left: 50rem;
+    }
+    .contact-info h2{
+        font-size: 9.5rem;
+        line-height: 5.8rem;
+    }
+    .contact-info h2 a svg{
+        width: 8rem;
+        height: 8rem;
+    }
+    .contact-info h2 a{
+        margin-left: 2.6rem;
+    }
+    .info-content .about .title{
+        font-size: 3rem;
+    }
+    .info-content .about p{
+        font-size: 1.3rem;
+        line-height: 2rem;
+    }
+    .info-content .about a{
+        font-size: 1.5rem;
+    }
+    .info-content .yeah .title{
+        font-size: 4.4rem;
+    }
+    .info-content .yeah .contact{
+        height: 7rem;
+    }
+    .contact .icon{
+        padding: 0 60px;
+    }
+}
+/***********X************ Dekstop Size ***************X**********/
+/********************** Tab size **************************/
+@media screen and (max-width: 840px){
+    header{
+        background-size: 170% 110%;
+    }
+    nav{
+        padding: 4.8rem 5rem;
+    }
+    nav .contain-nav{
+        width: 50%;
+    }
+    .content{
+        margin-left: 2.5rem;
+    }
+    .tag{
+        margin-left: 8rem;
+        font-size: 1rem;
+    }
+    .content .intro h1{
+        width: 100%;
+        line-height: 7.6rem;
+        font-size: 6.1rem;
+    }
+    .short-line{
+        width: 5rem;
+        height: 5px;
+        margin-top: 2.2rem;
+    }
+    .content .intro .intro-content .text{
+        font-size: 1rem;
+        line-height: 2rem;
+        width: 75%;
+    }
+    .intro-content .btn{
+        width: 16rem;
+        height: 4.2rem;
+        font-size: 1rem;
+        margin-top: 2.4rem;
+    }
+    .ffbtn{
+        left: 3.2rem;
+        top: 1.5rem;
+    }
+    .hero{
+        align-items: center;
+        margin-top: 7rem;
+    }
+    .hero-line{
+        width: 100%;
+        top: 30%;
+    }
+    .hero-line p{
+        letter-spacing: 0;
+        font-size: 1.6rem;
+        margin: 0 2rem;
+    }
+    .h-btn{
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+    }
+    .h-btn .btn{
+        width: 45%;
+        font-size: 1rem;
+        height: 4.3rem;
+    }
+    .h-btn-2 {
+        top: 1.5rem;
+        left: 4.5rem;
+    }
+    .hwrap {
+        margin-top: 25rem;
+    }
+    .hero-slider div{
+        font-weight: 400;
+        padding: 2rem 5rem;
+    }
+    @keyframes animate{
+        100%{
+            transform: translateX(-200%);
+        }
+    }
+    .work .outline-title h1{
+        font-size: 6rem;
+        margin-left: 3rem;
+    }
+    .work .outline-title h1:nth-child(2){
+        margin-left: 16rem;
+    }
+    .works{
+        margin: 10rem 2rem;
+    }
+    .project{
+        width: 100%;
+        margin: 3rem 0;
+    }
+    .contact-info h2{
+        font-size: 5.5rem;
+        top:15%;
+        left: 18%;
+        transform: none;
+    }
+    .contact-info {
+        height: 60vh;
+    }
+    .contact-info h2 a{
+        margin-left: 1.2rem;
+    }
+    .info-content{
+        flex-direction: column;
+    }
+    .info-content .about{
+        width: 100%;
+    }
+    .info-content .yeah{
+        width: 70%;
+        margin-left: 5rem;
+    }
+    footer{
+        padding: 0;
+        flex-direction: column;
+    }
+    footer .social{
+        width: 100%;
+    }
+    .back-btn{
+        margin: 3rem;
+    }
+    footer .comment{
+        width: 100%;
+    }
+    .contact .mail{
+        font-size: 2.4vw;
+    }
+}
+/************X********** Tab size *************X*************/
+/************************* Mobile size *************************/
+@media screen and (max-width: 640px){
+    header{
+        background-size: 170% 85%;
+    }
+    nav{
+        padding: 3.75rem 1.875rem;
+    }
+    nav .logo:hover::after{
+        opacity: 0;
+    }
+    nav .contain-nav{
+        width: 72%;
+        flex-direction: row-reverse;
+    }
+    nav .contain-nav .menu a svg{
+        display: none;
+    }
+    .fab{
+        font-size: 1.1rem;
+    }
+    nav .contain-nav .menu a{
+        font-size: 1.2rem;
+        font-weight: 400;
+    }
+    .content{
+        margin-left: 1.5rem;
+    }
+    .tag{
+        margin-left: 0;
+        line-height: 1.5rem;
+        font-size: .8rem;
+        margin: 0 2rem;
+        font-weight: 800;
+    }
+    .intro{
+        margin-top: 4rem;
+    }
+    .content .intro h1{
+        line-height: 16vw;
+        font-size: 13vw;
+        font-weight: 500;
+    }
+    .short-line{
+        width: 4rem;
+        height: 2px;
+        margin-top: 1.2rem;
+    }
+    .intro-content{
+        margin-right: 1.5rem;
+    }
+    .content .intro .intro-content .text{
+        font-size: 3vw;
+        line-height: 1.3rem;
+        width: 100%;
+    }
+    .intro-content .btn{
+        width: 100%;
+        height: 3rem;
+        font-size: .7rem;
+    }
+    .ffbtn{
+        left: 7rem;
+        top: 1rem;
+    }
+    .hero{
+        margin-top: 20rem;
+    }
+    .hero-line{
+        top: 10%;
+    }
+    .hero-line p{
+        font-size: 1.2rem;
+        font-size: 5.1vw;
+        line-height: 2rem;
+        margin: 0 1rem;
+    }
+    .w-1{
+        margin-right: 3rem;
+    }
+    .h-line-img{
+        width: 2rem;
+    }
+    .h-btn{
+        width: 90%;
+        margin: 2.5rem 1rem;
+        flex-direction: column;
+    }
+    .h-btn .btn {
+        width: 100%;
+        height: 3.3rem;
+        font-size: .8rem;
+    }
+    @keyframes animate{
+        100%{
+            transform: translateX(-570%);
+        }
+    }
+    .work .outline-title h1{
+        font-size: 4.1rem;
+        margin-left: 1.5rem;
+    }
+    .work .outline-title h1:nth-child(2){
+        margin: 0;
+        margin-left: 1.5rem;
+    }
+    .works{
+        margin: 6rem 2rem;
+    }
+    .project-desc{
+        padding: 1.8rem 1rem 2rem 2rem;
+    }
+    .contact-info h2 a span{
+        display: none;
+    }
+    .contact-info h2{
+        font-size: 3.3rem;
+        left: 6%;
+    }
+    .contact-info h2 a svg{
+        width: 3.3rem;
+        height: 3.3rem;
+    }
+    .info-content .about{
+        padding: 2.5rem;
+    }
+    .info-content .yeah{
+        width: 93%;
+        margin: 7.5rem .8rem;
+        font-weight: 600;
+    }
+    .contact .icon{
+        padding: 0 1.8rem;
+    }
+    .contact .mail{
+        font-size: 4vw;
+    }
+    footer .social{
+        height: 120px;
+    }
+    footer .social a{
+        flex-direction: column;
+        align-items: center;
+    }
+    footer .social a svg{
+        margin: 0;
+        margin-bottom: 1rem;
+    }
+}
+/*************X************ Mobile size *************X************/
+/**************X************ Main page ********X********************/
+/************************* About Us ***************************/
+/************************ Dekstop *****************************/
+@media screen and (min-width: 1440px){
+    .nav{
+        padding-top: 6rem;
+    }
+    .about-header h1{
+        font-size: 27rem;
+        line-height: 26rem;
+    }
+    .about-us h1 span img{
+        width: 27rem;
+        top: 195px;
+        left: 1060px;
+    }
+    .article p{
+        font-size: 2.1rem;
+        line-height: 3.5rem;
+    }
+    .f-img{
+        width: 18rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .f-img p{
+        font-size: .9rem;
+    }
+    .f-btn .btn-2 .h-btn-2{
+        left: 5.2rem;
+    }
+    .value span h1{
+        font-size: 15rem;
+        line-height: 16rem;
+    }
+    .value span h1:nth-last-child(1){
+        margin-left: 24rem;
+    }
+    .value-content-header{
+        width: 50rem;
+    }
+    .value-content-header h1{
+        font-size: 2rem;
+        line-height: 3rem;
+    }
+    .process-list ul li .number{
+        width: 6.5rem;
+        height: 6.5rem;
+        font-size: 1.9rem;
+    }
+    .process-list ul li h3{
+        margin: 3rem 0;
+        font-size: 2rem;
+    }
+    .team-header h1{
+        font-size: 17rem;
+        line-height: 17rem;
+    }
+    .team-article .a-p1{
+        font-size: 1.9rem;
+        line-height: 3.5rem;
+    }
+    .a-p2{
+        font-size: 1.2rem;
+        line-height: 1.8rem;
+    }
+    .team-article ul{
+        font-size: 1.4rem;
+    }
+    .members img{
+        width: 40rem;
+    }
+    .members-description{
+        width: 40rem;
+    }
+    .members-description h2{
+        font-size: 2.3rem;
+    }
+    .members-details p{
+        font-size: 1.2rem;
+    }
+    .members-details p span{
+        font-size: 1rem;
+    }
+    .members-details img{
+        width: 3rem;
+    }
+    .members-description hr{
+        width: 7rem;
+        margin-top: 2rem;
+        height: 4px;
+    }
+    .expection-header{
+        font-size: 5rem;
+    }
+}
+/***************X********* Dekstop ****************X*************/
+/************************ Tab *****************************/
+@media screen and (max-width: 840px){
+    .about-us{
+        margin-top: 6rem;
+    }
+    .about-header h1{
+        font-size: 13rem;
+        line-height: 14rem;
+    }
+    .about-us h1 .s3{
+        left: -5rem;
+    }
+    .about-us h1 span img{
+        width: 14rem;
+        top: 87px;
+        left: 516px;
+    }
+    .article{
+        width: 95%;
+        line-height: 2.3rem;
+    }
+    .article p{
+        font-size: 1.3rem;
+    }
+    .f-img p{
+        font-size: .7rem;
+    }
+    .f-btn .btn-2 .h-btn-2{
+        left: 7rem;
+    }
+    .f-btn .btn-3 .h-btn-2{
+        left: 5.5rem;
+    }
+    .value span h1{
+        font-size: 9rem;
+        margin-left: 3rem;
+    }
+    .value-content{
+        width: 90%;
+        margin-left: 3rem;
+    }
+    .process-list ul{
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    .process-list ul li{
+        width: 35%;
+        margin-bottom: 5rem;
+    }
+    .team-header h1{
+        font-size: 13rem;
+        line-height: 13rem;
+    }
+    .team-article{
+        width: 85%;
+    }
+    .members{
+        margin: 0 3rem 1rem 3rem;
+        height: 55vh;
+    }
+    .members img{
+        width: 22rem;
+    }
+    .members-details img{
+        width: 2rem;
+    }
+    .members-description{
+        width: 19rem;
+    }
+    .members-description hr{
+        width: 3rem;
+        height: 3px;
+    }
+    .expect{
+        margin-top: 15rem;
+    }
+    .expection-header{
+        font-size: 3rem;
+        margin-bottom: 0;
+    }
+    .expection{
+        height: 60vh;
+    }
+    .number{
+        width: 55%;
+    }
+    .number svg{
+        transform: scale(.9);
+        width: 22rem;
+    }
+    .expect-details{
+        width: 22rem;
+    }
+    .expect-details h2{
+        font-size: 5rem;
+    }
+    .expect-details p{
+        line-height: 1.3rem;
+        font-size: .8rem;
+    }
+    .expect-details a{
+        font-size: .7rem;
+    }
+}
+/***************X********* Tab ****************X*************/
+/************************ Mobail *****************************/
+@media screen and (max-width: 640px){
+    .about-us{
+        margin-top: 2rem;
+    }
+    .about-header h1{
+        font-size: 6rem;
+        line-height: 7rem;
+    }
+    .about-us h1 .s3{
+        left: -3rem;
+    }
+    .about-us h1 span img{
+        width: 7rem;
+        top: 33px;
+        left: 237px;
+    }
+    .article{
+        margin: 10rem 0;
+    }
+    .article p{
+        font-size: 1.1rem;
+    }
+    .f{
+        flex-direction: column;
+    }
+    .article .f-p2{
+        width: 100%;
+    }
+    .h-btn-2{
+        top: 1.1rem;
+        left: 8.5rem;
+    }
+    .value span h1{
+        font-size: 5rem;
+        margin-left: 1rem;
+        -webkit-text-stroke: .1rem var(--heading);
+        line-height: 6rem;
+    }
+    .value span h1:nth-last-child(1){
+        margin-left: 3rem;
+    }
+    .value-content{
+        margin-left: 1rem;
+        width: 90%;
+    }
+    .value-content-header{
+        width: 100%;
+    }
+    .value-content-header h1{
+        font-size: .9rem;
+        line-height: 1.5rem;
+    }
+    .process-list ul{
+        justify-content: space-between;
+    }
+    .process-list ul li{
+        width: 45%;
+    }
+    .process-list ul li .number{
+        width: 4rem;
+        height: 4rem;
+        font-size: 1rem;
+        padding: 35px 20px 15px 10px;
+    }
+    .process-list ul li p{
+        line-height: 1.5rem;
+    }
+    .team-header h1{
+        font-size: 10rem;
+        line-height: 10rem;
+    }
+    .team-article{
+        width: 90%;
+    }
+    .team-article .a-p1{
+        font-size: 1rem;
+        line-height: 2.1rem;
+    }
+    .a-p2{
+        width: 100%;
+    }
+    .team-article ul li{
+        font-size: .9rem;
+    }
+    .members{
+        flex-direction: column;
+        height: 120vh;
+    }
+    .members-alignment{
+        flex-direction: column-reverse;
+    }
+    .expect{
+        margin-top: 10rem;
+    }
+    .expection{
+        height: 110vh;
+        flex-direction: column;
+    }
+    .number{
+        width: 100%;
+    }
+    .expect-details{
+        width: 20rem;
+        margin-top: -5rem;
+    }
+    .expect-details h2{
+        font-size: 4rem;
+    }
+    .about-contact{
+        height: 90vh;
+    }
+    .about-contact h2{
+        top: 35%;
+    }
+    .work-header h1{
+        font-size: 9rem;
+        line-height: 9rem;
+    }
+}
+/***************X********* Mobail ****************X*************/
+/*************X************ About Us ***************X************/
+/************************* Members Protfolio *****************************/
+/************************** tab ***************************/
+@media screen and (max-width:840px) {
+    .our-title{
+        margin-left: 4rem;
+    }
+    .our-title h1{
+        font-size: 10vw;
+        line-height: 12vw;
+    }
+    .our-intro{
+        padding-left: 0;
+    }
+    .our-text{
+        width: 50%;
+        font-size: .8rem;
+        line-height: 1.8rem;
+    }
+    .intro-text{
+        font-size: 1.4rem;
+        line-height: 2.6rem;
+    }
+    .our-picture{
+        width: 48%;
+        padding-right: 0;
+    }
+    .our-services{
+        flex-direction: column;
+    }
+    .content-services{
+        width: 100%;
+        margin-top: 4rem;
+    }
+    .resume{
+        width: 100%;
+        margin: 5rem 0 0 1rem;
+    }
+}
+/****************X********** tab ****************X***********/
+/************************** mobile ***************************/
+@media screen and (max-width:640px) {
+    .our-title{
+        margin-left: 1rem;
+        margin-top: 3rem;
+    }
+    .our-title h1{
+        font-size: 15vw;
+        line-height: 19vw;
+        font-weight: 600;
+    }
+    .our-title .outline-title{
+        font-size: 19vw;
+        line-height: 25.4vw;
+    }
+    .introduction{
+        padding: 0 1.6rem;
+    }
+    .our-intro{
+        flex-direction: column-reverse;
+    }
+    .our-text{
+        width: 100%;
+    }
+    .our-picture{
+        width: 100%;
+    }
+    .content-services ul li{
+        width: 100%;
+    }
+    .content-services{
+        padding: 2.5rem;
+    }
+    .resume{
+        margin: 4em 0 0 0;
+    }
+    .resume .btn{
+        width: 100%;
+    }
+    .resume .btn .ffbtn{
+        left: 7.8rem;
+        top: 1.2rem;
+    }
+    .info-content .yeah p{
+        font-size: .9rem;
+        line-height: 1.7rem;
+    }
+}
+/****************X********** mobile ****************X***********/
+/************X************* Members Protfolio ****************X*************/
+/****************************** Contact Page ***************************/
+/*********************** Mobile **************************/
+@media screen and (max-width: 640px) {
+    .Contact-content h1{
+        font-size: 6.2rem;
+    }
+    section .from-width{
+        width: 95%;
+    }
+    .name{
+        flex-direction: column;
+    }
+    section .col-1{
+        width: 100%;
+        margin-bottom: 2rem;
+    }
+    section .col-2{
+        margin-top: 1.5rem;
+    }
+    .iti{
+        width: 22%;
+    }
+    .btn a .sbtn{
+        width: 9.5rem;
+    }
+}
+/**************X********* Mobile ***************X***********/
+/******************X************ Contact Page ***************X************/
+/*************X******** Responsive ***************X*************/
+/************************ Animation *****************************/
+
+@-webkit-keyframes fadeInBottomRight {
+    0% {
+        transform: skew(0, 10deg) rotate(10deg) translate(200px, 1400px);
+        opacity: 0;
+    }
+    60% {
+        transform: skew(0, 10deg) rotate(10deg) translate(200px, 1400px);
+        opacity: 0;
+    }
+    100% {
+        transform: skew(0, 0) rotate(0) translate(0, 0);
+        opacity: 1;
+    }
+}
+/***************************************************
+ * Generated by SVG Artista on 3/31/2022, 5:44:48 AM
+ * MIT license (https://opensource.org/licenses/MIT)
+ * W. https://svgartista.net
+ **************************************************/
+
+svg .svg-elem-1 {
+  stroke-dashoffset: 4002px;
+  stroke-dasharray: 4002px;
+  -webkit-transition: stroke-dashoffset 0.5s cubic-bezier(0.47, 0, 0.745, 0.715) 0s;
+          transition: stroke-dashoffset 0.5s cubic-bezier(0.47, 0, 0.745, 0.715) 0s;
+}
+
+svg.active .svg-elem-1 {
+  stroke-dashoffset: 0;
+}
+
+svg .svg-elem-2 {
+  stroke-dashoffset: 65px;
+  stroke-dasharray: 65px;
+  -webkit-transition: stroke-dashoffset 0.5s cubic-bezier(0.47, 0, 0.745, 0.715) 0.12s;
+          transition: stroke-dashoffset 0.5s cubic-bezier(0.47, 0, 0.745, 0.715) 0.12s;
+}
+
+svg.active .svg-elem-2 {
+  stroke-dashoffset: 0;
+}
+
+svg .svg-elem-3 {
+  stroke-dashoffset: 34.99190139770508px;
+  stroke-dasharray: 34.99190139770508px;
+  -webkit-transition: stroke-dashoffset 0.5s cubic-bezier(0.47, 0, 0.745, 0.715) 0.24s;
+          transition: stroke-dashoffset 0.5s cubic-bezier(0.47, 0, 0.745, 0.715) 0.24s;
+}
+
+svg.active .svg-elem-3 {
+  stroke-dashoffset: 0;
+}
+
+svg .svg-elem-4 {
+  stroke-dashoffset: 1058.587890625px;
+  stroke-dasharray: 1058.587890625px;
+  -webkit-transition: stroke-dashoffset 0.5s cubic-bezier(0.47, 0, 0.745, 0.715) 0.36s;
+          transition: stroke-dashoffset 0.5s cubic-bezier(0.47, 0, 0.745, 0.715) 0.36s;
+}
+
+svg.active .svg-elem-4 {
+  stroke-dashoffset: 0;
+}
+
+svg .svg-elem-5 {
+  stroke-dashoffset: 265.9322814941406px;
+  stroke-dasharray: 265.9322814941406px;
+  -webkit-transition: stroke-dashoffset 0.5s cubic-bezier(0.47, 0, 0.745, 0.715) 0.48s;
+          transition: stroke-dashoffset 0.5s cubic-bezier(0.47, 0, 0.745, 0.715) 0.48s;
+}
+
+svg.active .svg-elem-5 {
+  stroke-dashoffset: 0;
+}
+
+svg .svg-elem-6 {
+  stroke-dashoffset: 364.095458984375px;
+  stroke-dasharray: 364.095458984375px;
+  -webkit-transition: stroke-dashoffset 0.5s cubic-bezier(0.47, 0, 0.745, 0.715) 0.6s;
+          transition: stroke-dashoffset 0.5s cubic-bezier(0.47, 0, 0.745, 0.715) 0.6s;
+}
+
+svg.active .svg-elem-6 {
+  stroke-dashoffset: 0;
+}
+
+svg .svg-elem-7 {
+  stroke-dashoffset: 133.96685791015625px;
+  stroke-dasharray: 133.96685791015625px;
+  -webkit-transition: stroke-dashoffset 0.5s cubic-bezier(0.47, 0, 0.745, 0.715) 0.72s;
+          transition: stroke-dashoffset 0.5s cubic-bezier(0.47, 0, 0.745, 0.715) 0.72s;
+}
+
+svg.active .svg-elem-7 {
+  stroke-dashoffset: 0;
+}
+
+svg .svg-elem-8 {
+  stroke-dashoffset: 343.095458984375px;
+  stroke-dasharray: 343.095458984375px;
+  -webkit-transition: stroke-dashoffset 0.5s cubic-bezier(0.47, 0, 0.745, 0.715) 0.84s;
+          transition: stroke-dashoffset 0.5s cubic-bezier(0.47, 0, 0.745, 0.715) 0.84s;
+}
+
+svg.active .svg-elem-8 {
+  stroke-dashoffset: 0;
+}
+
+svg .svg-elem-9 {
+  stroke-dashoffset: 133.9662628173828px;
+  stroke-dasharray: 133.9662628173828px;
+  -webkit-transition: stroke-dashoffset 0.5s cubic-bezier(0.47, 0, 0.745, 0.715) 0.96s;
+          transition: stroke-dashoffset 0.5s cubic-bezier(0.47, 0, 0.745, 0.715) 0.96s;
+}
+
+svg.active .svg-elem-9 {
+  stroke-dashoffset: 0;
+}
+
+svg .svg-elem-10 {
+  stroke-dashoffset: 869.587890625px;
+  stroke-dasharray: 869.587890625px;
+  -webkit-transition: stroke-dashoffset 0.5s cubic-bezier(0.47, 0, 0.745, 0.715) 1.08s;
+          transition: stroke-dashoffset 0.5s cubic-bezier(0.47, 0, 0.745, 0.715) 1.08s;
+}
+
+svg.active .svg-elem-10 {
+  stroke-dashoffset: 0;
+}
+
+svg .svg-elem-11 {
+  stroke-dashoffset: 232.941650390625px;
+  stroke-dasharray: 232.941650390625px;
+  -webkit-transition: stroke-dashoffset 0.5s cubic-bezier(0.47, 0, 0.745, 0.715) 1.2s;
+          transition: stroke-dashoffset 0.5s cubic-bezier(0.47, 0, 0.745, 0.715) 1.2s;
+}
+
+svg.active .svg-elem-11 {
+  stroke-dashoffset: 0;
+}
+
+svg .svg-elem-12 {
+  stroke-dashoffset: 983.286376953125px;
+  stroke-dasharray: 983.286376953125px;
+  -webkit-transition: stroke-dashoffset 0.5s cubic-bezier(0.47, 0, 0.745, 0.715) 1.3199999999999998s;
+          transition: stroke-dashoffset 0.5s cubic-bezier(0.47, 0, 0.745, 0.715) 1.3199999999999998s;
+}
+
+svg.active .svg-elem-12 {
+  stroke-dashoffset: 0;
+}
+
+svg .svg-elem-13 {
+  stroke-dashoffset: 199.94891357421875px;
+  stroke-dasharray: 199.94891357421875px;
+  -webkit-transition: stroke-dashoffset 0.5s cubic-bezier(0.47, 0, 0.745, 0.715) 1.44s;
+          transition: stroke-dashoffset 0.5s cubic-bezier(0.47, 0, 0.745, 0.715) 1.44s;
+}
+
+svg.active .svg-elem-13 {
+  stroke-dashoffset: 0;
+}
+
+svg .svg-elem-14 {
+  stroke-dashoffset: 149px;
+  stroke-dasharray: 149px;
+  -webkit-transition: stroke-dashoffset 0.5s cubic-bezier(0.47, 0, 0.745, 0.715) 1.56s;
+          transition: stroke-dashoffset 0.5s cubic-bezier(0.47, 0, 0.745, 0.715) 1.56s;
+}
+
+svg.active .svg-elem-14 {
+  stroke-dashoffset: 0;
+}
+
+svg .svg-elem-15 {
+  stroke-dashoffset: 34.99168395996094px;
+  stroke-dasharray: 34.99168395996094px;
+  -webkit-transition: stroke-dashoffset 0.5s cubic-bezier(0.47, 0, 0.745, 0.715) 1.68s;
+          transition: stroke-dashoffset 0.5s cubic-bezier(0.47, 0, 0.745, 0.715) 1.68s;
+}
+
+svg.active .svg-elem-15 {
+  stroke-dashoffset: 0;
+}
+
+svg .svg-elem-16 {
+  stroke-dashoffset: 953.587890625px;
+  stroke-dasharray: 953.587890625px;
+  -webkit-transition: stroke-dashoffset 0.5s cubic-bezier(0.47, 0, 0.745, 0.715) 1.7999999999999998s;
+          transition: stroke-dashoffset 0.5s cubic-bezier(0.47, 0, 0.745, 0.715) 1.7999999999999998s;
+}
+
+svg.active .svg-elem-16 {
+  stroke-dashoffset: 0;
+}
+
+svg .svg-elem-17 {
+  stroke-dashoffset: 265.9335021972656px;
+  stroke-dasharray: 265.9335021972656px;
+  -webkit-transition: stroke-dashoffset 0.5s cubic-bezier(0.47, 0, 0.745, 0.715) 1.92s;
+          transition: stroke-dashoffset 0.5s cubic-bezier(0.47, 0, 0.745, 0.715) 1.92s;
+}
+
+svg.active .svg-elem-17 {
+  stroke-dashoffset: 0;
+}
+
+svg .svg-elem-18 {
+  stroke-dashoffset: 642.19091796875px;
+  stroke-dasharray: 642.19091796875px;
+  -webkit-transition: stroke-dashoffset 0.5s cubic-bezier(0.47, 0, 0.745, 0.715) 2.04s;
+          transition: stroke-dashoffset 0.5s cubic-bezier(0.47, 0, 0.745, 0.715) 2.04s;
+}
+
+svg.active .svg-elem-18 {
+  stroke-dashoffset: 0;
+}
+
+svg .svg-elem-19 {
+  stroke-dashoffset: 199.94879150390625px;
+  stroke-dasharray: 199.94879150390625px;
+  -webkit-transition: stroke-dashoffset 0.5s cubic-bezier(0.47, 0, 0.745, 0.715) 2.16s;
+          transition: stroke-dashoffset 0.5s cubic-bezier(0.47, 0, 0.745, 0.715) 2.16s;
+}
+
+svg.active .svg-elem-19 {
+  stroke-dashoffset: 0;
+}
+
+svg .svg-elem-20 {
+  stroke-dashoffset: 1878.462158203125px;
+  stroke-dasharray: 1878.462158203125px;
+  -webkit-transition: stroke-dashoffset 0.5s cubic-bezier(0.47, 0, 0.745, 0.715) 2.28s;
+          transition: stroke-dashoffset 0.5s cubic-bezier(0.47, 0, 0.745, 0.715) 2.28s;
+}
+
+svg.active .svg-elem-20 {
+  stroke-dashoffset: 0;
+}
+
+svg .svg-elem-21 {
+  stroke-dashoffset: 331.9160461425781px;
+  stroke-dasharray: 331.9160461425781px;
+  -webkit-transition: stroke-dashoffset 0.5s cubic-bezier(0.47, 0, 0.745, 0.715) 2.4s;
+          transition: stroke-dashoffset 0.5s cubic-bezier(0.47, 0, 0.745, 0.715) 2.4s;
+}
+
+svg.active .svg-elem-21 {
+  stroke-dashoffset: 0;
+}
+
+svg .svg-elem-22 {
+  stroke-dashoffset: 579.19091796875px;
+  stroke-dasharray: 579.19091796875px;
+  -webkit-transition: stroke-dashoffset 0.5s cubic-bezier(0.47, 0, 0.745, 0.715) 2.52s;
+          transition: stroke-dashoffset 0.5s cubic-bezier(0.47, 0, 0.745, 0.715) 2.52s;
+}
+
+svg.active .svg-elem-22 {
+  stroke-dashoffset: 0;
+}
+
+svg .svg-elem-23 {
+  stroke-dashoffset: 166.95779418945312px;
+  stroke-dasharray: 166.95779418945312px;
+  -webkit-transition: stroke-dashoffset 0.5s cubic-bezier(0.47, 0, 0.745, 0.715) 2.6399999999999997s;
+          transition: stroke-dashoffset 0.5s cubic-bezier(0.47, 0, 0.745, 0.715) 2.6399999999999997s;
+}
+
+svg.active .svg-elem-23 {
+  stroke-dashoffset: 0;
+}
+
+svg .svg-elem-24 {
+  stroke-dashoffset: 4002px;
+  stroke-dasharray: 4002px;
+  -webkit-transition: stroke-dashoffset 0.5s cubic-bezier(0.47, 0, 0.745, 0.715) 2.76s;
+          transition: stroke-dashoffset 0.5s cubic-bezier(0.47, 0, 0.745, 0.715) 2.76s;
+}
+
+svg.active .svg-elem-24 {
+  stroke-dashoffset: 0;
+}
+
+svg .svg-elem-25 {
+  stroke-dashoffset: 4002px;
+  stroke-dasharray: 4002px;
+  -webkit-transition: stroke-dashoffset 0.5s cubic-bezier(0.47, 0, 0.745, 0.715) 2.88s;
+          transition: stroke-dashoffset 0.5s cubic-bezier(0.47, 0, 0.745, 0.715) 2.88s;
+}
+
+svg.active .svg-elem-25 {
+  stroke-dashoffset: 0;
+}
+
+svg .svg-elem-26 {
+  stroke-dashoffset: 18.527542114257812px;
+  stroke-dasharray: 18.527542114257812px;
+  -webkit-transition: stroke-dashoffset 0.5s cubic-bezier(0.47, 0, 0.745, 0.715) 3s;
+          transition: stroke-dashoffset 0.5s cubic-bezier(0.47, 0, 0.745, 0.715) 3s;
+}
+
+svg.active .svg-elem-26 {
+  stroke-dashoffset: 0;
+}
+
+svg .svg-elem-27 {
+  stroke-dashoffset: 134.21994018554688px;
+  stroke-dasharray: 134.21994018554688px;
+  -webkit-transition: stroke-dashoffset 0.5s cubic-bezier(0.47, 0, 0.745, 0.715) 3.12s;
+          transition: stroke-dashoffset 0.5s cubic-bezier(0.47, 0, 0.745, 0.715) 3.12s;
+}
+
+svg.active .svg-elem-27 {
+  stroke-dashoffset: 0;
+}
+
+svg .svg-elem-28 {
+  stroke-dashoffset: 68.10986328125px;
+  stroke-dasharray: 68.10986328125px;
+  -webkit-transition: stroke-dashoffset 0.5s cubic-bezier(0.47, 0, 0.745, 0.715) 3.2399999999999998s;
+          transition: stroke-dashoffset 0.5s cubic-bezier(0.47, 0, 0.745, 0.715) 3.2399999999999998s;
+}
+
+svg.active .svg-elem-28 {
+  stroke-dashoffset: 0;
+}
+
+svg .svg-elem-29 {
+  stroke-dashoffset: 68.11011505126953px;
+  stroke-dasharray: 68.11011505126953px;
+  -webkit-transition: stroke-dashoffset 0.5s cubic-bezier(0.47, 0, 0.745, 0.715) 3.36s;
+          transition: stroke-dashoffset 0.5s cubic-bezier(0.47, 0, 0.745, 0.715) 3.36s;
+}
+
+svg.active .svg-elem-29 {
+  stroke-dashoffset: 0;
+}
+
+svg .svg-elem-30 {
+  stroke-dashoffset: 117.69267272949219px;
+  stroke-dasharray: 117.69267272949219px;
+  -webkit-transition: stroke-dashoffset 0.5s cubic-bezier(0.47, 0, 0.745, 0.715) 3.48s;
+          transition: stroke-dashoffset 0.5s cubic-bezier(0.47, 0, 0.745, 0.715) 3.48s;
+}
+
+svg.active .svg-elem-30 {
+  stroke-dashoffset: 0;
+}
+
+svg .svg-elem-31 {
+  stroke-dashoffset: 101.16526794433594px;
+  stroke-dasharray: 101.16526794433594px;
+  -webkit-transition: stroke-dashoffset 0.5s cubic-bezier(0.47, 0, 0.745, 0.715) 3.5999999999999996s;
+          transition: stroke-dashoffset 0.5s cubic-bezier(0.47, 0, 0.745, 0.715) 3.5999999999999996s;
+}
+
+svg.active .svg-elem-31 {
+  stroke-dashoffset: 0;
+}
+
+svg .svg-elem-32 {
+  stroke-dashoffset: 18.527606964111328px;
+  stroke-dasharray: 18.527606964111328px;
+  -webkit-transition: stroke-dashoffset 0.5s cubic-bezier(0.47, 0, 0.745, 0.715) 3.7199999999999998s;
+          transition: stroke-dashoffset 0.5s cubic-bezier(0.47, 0, 0.745, 0.715) 3.7199999999999998s;
+}
+
+svg.active .svg-elem-32 {
+  stroke-dashoffset: 0;
+}
+
+svg .svg-elem-33 {
+  stroke-dashoffset: 134.22018432617188px;
+  stroke-dasharray: 134.22018432617188px;
+  -webkit-transition: stroke-dashoffset 0.5s cubic-bezier(0.47, 0, 0.745, 0.715) 3.84s;
+          transition: stroke-dashoffset 0.5s cubic-bezier(0.47, 0, 0.745, 0.715) 3.84s;
+}
+
+svg.active .svg-elem-33 {
+  stroke-dashoffset: 0;
+}
+
+svg .svg-elem-34 {
+  stroke-dashoffset: 101.16532135009766px;
+  stroke-dasharray: 101.16532135009766px;
+  -webkit-transition: stroke-dashoffset 0.5s cubic-bezier(0.47, 0, 0.745, 0.715) 3.96s;
+          transition: stroke-dashoffset 0.5s cubic-bezier(0.47, 0, 0.745, 0.715) 3.96s;
+}
+
+svg.active .svg-elem-34 {
+  stroke-dashoffset: 0;
+}
+
+svg .svg-elem-35 {
+  stroke-dashoffset: 167.27520751953125px;
+  stroke-dasharray: 167.27520751953125px;
+  -webkit-transition: stroke-dashoffset 0.5s cubic-bezier(0.47, 0, 0.745, 0.715) 4.08s;
+          transition: stroke-dashoffset 0.5s cubic-bezier(0.47, 0, 0.745, 0.715) 4.08s;
+}
+
+svg.active .svg-elem-35 {
+  stroke-dashoffset: 0;
+}
+
+svg .svg-elem-36 {
+  stroke-dashoffset: 84.63787078857422px;
+  stroke-dasharray: 84.63787078857422px;
+  -webkit-transition: stroke-dashoffset 0.5s cubic-bezier(0.47, 0, 0.745, 0.715) 4.2s;
+          transition: stroke-dashoffset 0.5s cubic-bezier(0.47, 0, 0.745, 0.715) 4.2s;
+}
+
+svg.active .svg-elem-36 {
+  stroke-dashoffset: 0;
+}
+
+/**********X************** Animation ******************X***********/
