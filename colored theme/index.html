@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bulb Toggle</title>
+
+<!-- Font Awesome for Bulb Icon -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<style>
+    body {
+        background: #000;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+        transition: background 0.4s ease;
+    }
+
+    #bulbBtn {
+        font-size: 100px;
+        color: #555; /* OFF color */
+        background: transparent;
+        border: none;
+        cursor: pointer;
+        transition: 0.3s;
+    }
+
+    /* Glow effect when ON */
+    .on {
+        color: #ffeb3b; /* Light yellow bulb ON */
+        text-shadow:
+            0 0 20px #ffeb3b,
+            0 0 40px #ffeb3b,
+            0 0 60px #ffeb3b;
+    }
+</style>
+</head>
+
+<body>
+
+<button id="bulbBtn">
+    <i class="fa-solid fa-lightbulb"></i>
+</button>
+
+<script>
+    const bulb = document.getElementById("bulbBtn");
+    let isOn = false;
+
+    bulb.addEventListener("click", () => {
+        isOn = !isOn;
+
+        if (isOn) {
+            document.body.style.background = "#ffffff";
+            bulb.classList.add("on");
+        } else {
+            document.body.style.background = "#000000";
+            bulb.classList.remove("on");
+        }
+    });
+</script>
+
+</body>
+</html>
