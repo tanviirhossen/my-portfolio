@@ -368,6 +368,11 @@ nav .contain-nav .menu a:hover svg{
     display: inline-block;
     transition: all .2s ease;
 }
+.h-btn-1-1{
+    position: absolute;
+    top: 1.2rem;
+    left: 4.2rem;
+}
 .h-btn-2{
     position: absolute;
     top: 1.2rem;
@@ -1712,16 +1717,21 @@ section .form-label{
     }
     nav .contain-nav{
         width: 72%;
-        flex-direction: row-reverse;
     }
     nav .contain-nav .menu a svg{
         display: none;
+    }
+    .h-btn-1-1 {
+        left: 8.2rem;
+    }
+    .h-btn-1-2{
+        left: 7.7rem;
     }
     .fab{
         font-size: 1.1rem;
     }
     nav .contain-nav .menu a{
-        font-size: 1.2rem;
+        font-size: 1rem;
         font-weight: 400;
     }
     .content{
